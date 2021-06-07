@@ -1,0 +1,138 @@
+<head>
+	<style>
+			#main{
+				border: 3px solid red;
+				width: 900px; height: 550px; 
+					}
+					strong#advertencia {
+						font-size: 15pt;
+						border: 2px solid green;
+					}
+			.opcionformu {
+
+			}
+
+			.formularios{
+
+				}
+
+		
+	/*			div.preguntas#p1{
+					color:green;
+					background: #;
+					
+				}
+				div.preguntas#p2{
+					color:green;
+					background: #;
+				
+					
+				}
+				div.preguntas#p3{
+					color:green;
+					background: #;
+				
+				}
+				div.preguntas#p4{
+					color:green;
+					background: #a4f4c2;
+				
+				}
+				div.preguntas#p5{
+					color:green;
+					background: #a4f4c2;
+				
+				}
+
+ */	
+ 			.seccion {
+ 				border: 2px dotted green; 
+ 			}
+ 			
+ 			
+ 						div.preguntas h2 {
+					color: green;
+					}
+
+
+			.formularios {
+							color: black;
+							font-size: 8pt;
+							font-style: italic;
+							
+							
+							height:50px
+					}	
+		
+			div.preguntas{
+					color: black
+					font-style: arial 9pt;
+					text-align:center;}
+			strong#advertencia {
+				font-size: 7px;
+				text-align: left;
+			}
+		
+			#img {
+				 width:250px;
+  			height: 250px;
+  			border: black 1px solid;    }
+  	/*
+  	margin-left: auto;
+  	margin-right: auto;
+  	background-color: lightblue;
+  	background-image: url("verde.jpg");
+  	background-position: right bottom;
+  	background-repeat: no-repeat;
+  	*/
+ 
+			#main{
+			border: 3px solid red;
+			width: 1200px; height: 950px; 
+			padding-left: 1px; padding-right:  1px; padding-top : 1px; padding-bottom: : 1px;
+			margin-left: 1px; margin-right: 1px; margin-top : 1px; margin-bottom: : 1px;	}
+				
+				#col1{
+					border: 3px solid green;
+					width: 400px; height: 900px; 
+					padding-left: 1px; padding-right:  1px; padding-top : 1px; padding-bottom: : 1px;
+					margin-left: 13px; margin-right: 1px; margin-top : 15px; margin-bottom: : 15px;
+					float: left;}
+
+				#col2{
+					padding-left: 8px; padding-right:  8px; padding-top : 5px; padding-bottom: : 5px;
+					margin-left: 8px; margin-right: 8px; margin-top : 8px; margin-bottom: : 8px;
+					}
+			 .lista_preguntas li{
+			 	font-size: 13 pt;
+			 	border: 3 px solid red;
+			 	float:left;
+			 	width: 50px;
+			 	height: 20px;
+			 	padding: 3px;
+			 	border: 2px solid green;
+			 	margin-right: 5px;
+			 	margin-left: 5px;
+			 	text-align: center;
+			 list-style-type: none;}
+
+			 
+
+			 .listapreguntas li:hover{
+			 	background: #fffac2;
+			 }
+
+
+		
+			 #foto1 {
+			 	height:250px;
+			 	width:200px;
+			 }
+
+
+		</style>
+
+
+
+		
+</head>
