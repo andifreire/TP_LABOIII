@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Trabajo practico</title>
+	<link href="style_main.css" rel="stylesheet" type="text/css"/>  
+</head>
+<body>
+		<h1>PRUEBA CUESTIONARIO SOBRE HISTORIA DEL ARTE</h1>
+	
+		
+
+	
+
+	<div id ="main"> 
+
+
+		
+
+		<div id ="col1"> 
+			
+		</div>
+
+		<p id="col2">
+					<form method="get" action="" id="formulario_id">
+					<label for="nombre" class="opcion_formu">Nombre:</label>
+					<input type="text" name="name" id ="nombre">
+
+					<label for="apellido" class="opcion_formu">Apellido:</label>
+					<input type="text" name="apellido" id ="ape">
+					<br/>
+					<label for ="edad" class="opcion_formu">Edad:</label>
+
+						<label for ="menos21" class="opcion_formu" >0-21</label>
+						<input type="radio" name ="age" value="1" id="menos21">
+						<label for ="21_35" class="opcion_formu">21-35</label>
+						<input type="radio" name ="age" value="1" id="21_35">
+						<label for ="35_55" class="opcion_formu">35-55</label>
+						<input type="radio" name ="age" value="1" id="35_55">
+						<label for ="mas55" class="opcion_formu">55- ...</label>
+						<input type="radio" name ="age" value="1" id="mas55">
+						
+					<h2 id="nombreformu">ENVIAR FORMULARIO</h2>
+
+					<strong id="advertencia"></strong>
+					</form>			
+
+			<ul id="menu">
+			 	<li class ="menu_item"  id="menu_artesvisuales">Artes visuales</li>
+			 	<li class ="menu_item" id="menu_moda">Moda</li>                    
+			 	<li class ="menu_item" id="menu_musica">Musica</li>
+			 	<li class="menu_item" id="menu_arquitectura">Arquitectura</li>
+			</ul>
+
+			<section class="seccion" id="seccion_artesvisuales">
+				
+				<h2>Seccion artes visuales</h2>
+
+				<div class="preguntas_arte" id="artep1">
+					<h2>¿A que estilo pictorico pertenece esta obra?</h2>
+					<img id="img" src="foto1.jpg" alt="una habitacion de color amarilla con las paredes distorsionadas, con un gato durmiendo en el suelo" />
+					<br/>
+					<label for="romanticismo">Romaticismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="romanticismo"/>
+					<br/>
+					<label for="romanticismo">Surrealismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="romanticismo"/>
+					<br/>
+					<label for="neoexpresionismo">Neo-expresionismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="neoexpresionismo"/>
+					<br/>
+					<label for="minimalismo">Minimalismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="minimalismo"/>
+					<br/>
+					<label for="rococo">Rococó</label>
+					<input type="radio" name="primario_rojo" value="1" id="rococo"/>
+					<br/>
+					<input type="submit" name ="enviararte_p2" value="ENVIAR PREGUNTA" id ="arte_submitp1"/>
+					<br/>
+				</div>
+
+				<div class="preguntas_arte" id="artep2">
+					<h2>¿Cuales de estos pintores nacieron antes del 1900?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="picasso" value="1" id="p_pablo"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="miro" value="1" id="j_miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="francesca" value="1" id="piero_della"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="manet" value="1" id="e_manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="cezanne" value="1" id="p_cezanne"/>
+					<br/>
+					<label for="braque">George Braque</label>
+					<input type="checkbox" name="braque" value="1" id="g_braque"/>
+					<br/>
+					<label for="basquiat">Jean Michel Basquiat</label>
+					<input type="checkbox" name="basquiat" value="1" id="j_m_basquiat"/>
+					<br/>
+					<input type="submit" name ="enviararte_p2" value="ENVIAR PREGUNTA" id ="arte_submitp2"/>
+				</div>
+
+				<div class="preguntas_arte" id="artep3">
+					<h2 >¿Cuales de estos pintores pertenceieron al movimiento cubista?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>	
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarartep3" value="ENVIAR PREGUNTA" id ="arte_submitp3"/>
+				</div>
+			
+				<div class="preguntas_arte" id="artep4">
+					<h2 >PREGUNTA 3</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+						<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarartep4" value="ENVIAR PREGUNTA" id ="arte_submitp4"/>
+				</div>
+				
+			
+				<div class="preguntas_arte" id="artep5">
+					<h2>¿Cuales de estos pintores pertenceieron al movimiento renacentista?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+						<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarartep5" value="ENVIAR PREGUNTA" id ="arte_submitp5"/>
+				</div>
+
+		
+			
+
+				<ul class="lista_preguntas">
+					<li id="arte_preg1">1</li>
+					<li id="arte_preg2">2</li>
+					<li id="arte_preg3">3</li>
+					<li id="arte_preg4">4</li>
+					<li id="arte_preg5">5</li>
+				</ul>
+					
+			</section>
+
+			<section class ="seccion" id="seccion_musica">
+				<h2>Esta es la seccion de musica</h2>
+
+				<div class="preguntas_musica" id="musica_p1">
+					<br/>
+					<h2>Que banda es la siguiente?</h2>
+					<img id="img" src="outkast.jpg" alt="big boi y andre 3000" />
+					<br/>
+					<label for="romanticismo">Outkast</label>
+					<input type="radio" name="primario_rojo" value="1" id="romanticismo"/>
+					<br/>
+					<label for="romanticismo">Public enemy</label>
+					<input type="radio" name="primario_rojo" value="1" id="romanticismo"/>
+					<br/>
+					<label for="neoexpresionismo">Wu tang clan</label>
+					<input type="radio" name="primario_rojo" value="1" id="neoexpresionismo"/>
+					<br/>
+					<label for="minimalismo">Babasonicos</label>
+					<input type="radio" name="primario_rojo" value="1" id="minimalismo"/>
+					<br/>
+					<label for="rococo">Gativideo</label>
+					<input type="radio" name="primario_rojo" value="1" id="rococo"/>
+					<br/>
+					<input type="submit" name ="enviarmusicap1" value="ENVIAR PREGUNTA" id ="musica_submitp1"/>
+					<br/>
+				</div>
+
+				<div class="preguntas_musica" id="musica_p2">
+					<br/>
+					<h2 >musica pregunta 2</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>	
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarmusicap2" value="ENVIAR PREGUNTA" id ="musica_submitp2"/>
+				</div>
+					
+			
+				<div class="preguntas_musica" id="musica_p3">
+					<br/>
+					<h2 >PREGUNTA 3 musica</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">esta es la 3</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Peeeeeeeesta es la 3a</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">esta es la 3</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">esta es la 3</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">esta es la 3</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+						<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarmusicap3" value="ENVIAR PREGUNTA" id ="musica_submitp3"/>
+				</div>
+				
+			
+				<div class="preguntas_musica" id="musica_p4">
+					<br/>
+					<h2 >musica</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+						<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarmusicap4" value="ENVIAR PREGUNTA" id ="musica_submitp4"/>
+				</div>
+
+		
+				<div class="preguntas_musica" id="musica_p5">
+					<br/>
+					<h2 >prwegunta musica 5</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarmusicap5" value="ENVIAR PREGUNTA 5" id ="musica_submitp5"/>
+				</div>
+
+				
+				<ul class="lista_preguntas">
+					<li id="musica_preg1">1</li>
+					<li id="musica_preg2">2</li>
+					<li id="musica_preg3">3</li>
+					<li id="musica_preg4">4</li>
+					<li id="musica_preg5">5</li>
+				</ul>
+				
+		 	</section>
+
+		 	<section class= "seccion" id="seccion_arquitectura">
+		 		<h1>SECCION ARQUITECTURA</h1>
+				<div class="preguntas_arquitectura" id="arquitecturap1">
+					<br/>
+					<h2>pepe tenia un poni</h2>
+					<img id="img" src="foto1.jpg" alt="una habitacion de color amarilla con las paredes distorsionadas, con un gato durmiendo en el suelo" />
+					<br/>
+					<label for="romanticismo">caca</label>
+					<input type="radio" name="primario_rojo" value="1" id="romanticismo"/>
+					<br/>
+					<label for="romanticismo">Surrealismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="romanticismo"/>
+					<br/>
+					<label for="neoexpresionismo">Neo-expresionismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="neoexpresionismo"/>
+					<br/>
+					<label for="minimalismo">Minimalismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="minimalismo"/>
+					<br/>
+					<label for="rococo">Rococó</label>
+					<input type="radio" name="primario_rojo" value="1" id="rococo"/>
+					<br/>
+					<input type="submit" name ="enviarp1" value="ENVIAR PREGUNTA" id ="submitp1"/>
+					<br/>
+				</div>
+
+				<div class="preguntas_arquitectura" id="arquitecturap2">
+					<h2>¿Cuales de estos pintores pertenceieron al movimiento cubista?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>	
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarp2" value="ENVIAR PREGUNTA" id ="submitp2"/>
+				</div>
+				
+			
+				<div class="preguntas_arquitectura" id="arquitecturap3">
+					<h2>PREGUNTA 3</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+						<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarp3" value="ENVIAR PREGUNTA" id ="submitp3"/>
+				</div>
+				
+			
+				<div class="preguntas_arquitectura" id="arquitecturap4">
+					<h2>¿Cuales de estos pintores pertenceieron al movimiento renacentista?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarp4" value="ENVIAR PREGUNTA" id ="submitp4"/>
+				</div>
+
+		
+				<div class="preguntas_arquitectura" id="arquitecturap5">
+					<h2>¿Cuales de estos pintores nacieron antes del 1900?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarp5" value="ENVIAR PREGUNTA" id ="submitp5"/>
+				</div>
+
+				<ul class="lista_preguntas">
+					<li id="arquitectura_preg1">1</li>
+					<li id="arquitectura_preg2">2</li>
+					<li id="arquitectura_preg3">3</li>
+					<li id="arquitectura_preg4">4</li>
+					<li id="arquitectura_preg5">5</li>
+				</ul>
+	
+			</section>
+
+			<section class="seccion" id="seccion_moda">
+				<h1>SECCION MODA</h1>
+				<div class="preguntas_moda" id="modap1">
+					<h2>pepe tenia un poni</h2>
+					<img id="img" src="foto1.jpg" alt="una habitacion de color amarilla con las paredes distorsionadas, con un gato durmiendo en el suelo" />
+					<br/>
+					<label for="romanticismo">caca</label>
+					<input type="radio" name="primario_rojo" value="1" id="romanticismo"/>
+					<br/>
+					<label for="romanticismo">Surrealismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="romanticismo"/>
+					<br/>
+					<label for="neoexpresionismo">Neo-expresionismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="neoexpresionismo"/>
+					<br/>
+					<label for="minimalismo">Minimalismo</label>
+					<input type="radio" name="primario_rojo" value="1" id="minimalismo"/>
+					<br/>
+					<label for="rococo">Rococó</label>
+					<input type="radio" name="primario_rojo" value="1" id="rococo"/>
+					<br/>
+					<input type="submit" name ="enviarp1" value="ENVIAR PREGUNTA" id ="submitp1"/>
+					<br/>
+				</div>
+
+				<div class="preguntas_moda"  id="modap2">
+					<h2 >¿Cuales de estos pintores pertenceieron al movimiento cubista?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>	
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarp2" value="ENVIAR PREGUNTA" id ="submitp2"/>
+				</div>
+				
+			
+				<div class="preguntas_moda"  id="modap3">
+					<h2>  PREGUNTA 3</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+						<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarp3" value="ENVIAR PREGUNTA" id ="submitp3"/>
+				</div>
+				
+			
+				<div class="preguntas_moda"  id="modap4">
+					<h2>¿Cual de los siguientes?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>						
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+			 		<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco:</label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarp4" value="ENVIAR PREGUNTA" id ="submitp4"/>
+				</div>
+
+		
+				<div class="preguntas_moda" id="modap5">
+					<h2 >¿Cuales de estos pintores nacieron antes del 1900?</h2>
+					<label for="picasso">Pablo Picasso</label>
+					<input type="checkbox" name="pablo_p" value="1" id="pablo_p"/>
+					<br/>
+					<label for="miro">Joan Miró</label>
+					<input type="checkbox" name="j_miro" value="1" id="miro"/>
+					<br/>
+					<label for="francesca">Piero della Francesca</label>
+					<input type="checkbox" name="piero" value="1" id="francesca"/>
+					<br/>
+					<label for="manet">Edouard Manet</label>
+					<input type="checkbox" name="piero" value="1" id="manet"/>
+					<br/>
+					<label for="cezanne">Paul Cezanne</label>
+					<input type="checkbox" name="piero" value="1" id="cezanne"/>
+					<br/>
+					<label for="gris">George Braque</label>
+					<input type="checkbox" name="primario_gris" value="1" id="gris"/>
+					<br/>
+					<label for="blanco">Blanco: </label>
+					<input type="checkbox" name="primario_blanco" value="1" id="blanco"/>
+					<br/>
+					<input type="submit" name ="enviarp5" value="ENVIAR PREGUNTA" id ="submitp5"/>
+				</div>
+
+				<ul class="lista_preguntas">
+					<li id="moda_preg1">1</li>
+					<li id="moda_preg2">2</li>
+					<li id="moda_preg3">3</li>
+					<li id="moda_preg4">4</li>
+					<li id="moda_preg5">5</li>
+				</ul>
+	
+			 </section>
+
+	</div>	
+
+		<script type="text/javascript" src="javascript_labo3_tp.js"> </script> 
+		
+</body>
+</html>
