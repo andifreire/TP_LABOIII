@@ -4,18 +4,99 @@
 				border: 3px solid red;
 				width: 900px; height: 550px; 
 					}
-					strong#advertencia {
+
+			#main{
+			border: 3px solid red;
+			width: 1200px; height: 950px; 
+			padding-left: 1px; padding-right:  1px; padding-top : 1px; padding-bottom: : 1px;
+			margin-left: 1px; margin-right: 1px; margin-top : 1px; margin-bottom: : 1px;	}
+				
+			#col1{
+					border: 3px solid green;
+					width: 390px; height: 900px; 
+					padding-left: 1px; padding-right:  1px; padding-top : 1px; padding-bottom: : 1px;
+					margin-left: 13px; margin-right: 13px; margin-top : 15px; margin-bottom: : 15px;
+					float: left;}
+
+			#col2{
+					
+					padding-left: 8px; padding-right:  8px; padding-top : 5px; padding-bottom: : 5px;
+					margin-left: 8px; margin-right: 8px; margin-top : 8px; margin-bottom: : 8px;
+					}
+
+				 .lista_preguntas li{
+			 	font-size: 13 pt;
+			 	border: 3 px solid red;
+			 	float:left;
+			 	width: 50px;
+			 	height: 20px;
+			 	padding: 3px;
+			 	border: 2px solid green;
+			 	margin-right: 5px;
+			 	margin-left: 5px;
+			 	text-align: center;
+				 }
+
+			  ul#menu li{
+			 	font-size: 13 pt;
+			 	border: 2 px solid red;
+			 	float:left;
+			 	margin:auto;
+			 	border: 2px solid green;
+			 	margin-right: 5px;
+			 	margin-left: 5px;
+			 	text-align: center;
+				list-style-type: none;}
+
+				strong#advertencia {
 						font-size: 15pt;
-						border: 2px solid green;
+					
 					}
 			.opcionformu {
 
 			}
-
+			p#puntaje_total {
+				margin: auto;
+				padding top: 100px ;
+				height: 200px;
+				color:blue;
+				font-size: 22px;
+				text-align: center;
+			}
+			.preguntas_arte div{
+			
+			}
+			section#seccion_musica {display:none;}
+			section#seccion_arquitectura {display:none;}
+			section#seccion_moda {display:none;}
+			section#seccion_artesvisuales {display:none;}
+			/**/
+			div.preguntas_arte img{
+				height:100px;
+				width: 100px;
+				border: 1px dotted green;	
+			}
+			.artepregunta_4 img{
+				padding:auto;
+				margin:auto;
+			}
+			ul#menu {
+				display:none;
+			}
 			.formularios{
 
 				}
-
+			li#opcion1_bienvenida{
+				display:none;
+			}
+			li#opcion2_bienvenida{
+				display:none;
+			}
+			#puntaje div{border:2px solid red;
+						padding:auto;
+						margin:auto;
+						color: green;
+						}
 		
 	/*			div.preguntas#p1{
 					color:green;
@@ -44,9 +125,22 @@
 				
 				}
 
- */	
+ */			li#opcion1_bienvenida {
+ 					border-style: double;
+ 					border-color: 2px blue;
+ }
+ 	li#opcion2_bienvenida {
+ 					border-style: double;
+ 					border-color: 2px purple;
+ }
  			.seccion {
- 				border: 2px dotted green; 
+ 			
+ 			}
+ 			h1#datos_jugador{
+ 				margin:auto;
+ 				padding:auto;
+ 				font-size: 14pt;
+ 				color:#6a78f4;
  			}
  			
  			
@@ -54,6 +148,9 @@
 					color: green;
 					}
 
+			.reglasdejuego {
+				display: none;
+			}
 
 			.formularios {
 							color: black;
@@ -86,41 +183,12 @@
   	background-repeat: no-repeat;
   	*/
  
-			#main{
-			border: 3px solid red;
-			width: 1200px; height: 950px; 
-			padding-left: 1px; padding-right:  1px; padding-top : 1px; padding-bottom: : 1px;
-			margin-left: 1px; margin-right: 1px; margin-top : 1px; margin-bottom: : 1px;	}
-				
-				#col1{
-					border: 3px solid green;
-					width: 400px; height: 900px; 
-					padding-left: 1px; padding-right:  1px; padding-top : 1px; padding-bottom: : 1px;
-					margin-left: 13px; margin-right: 1px; margin-top : 15px; margin-bottom: : 15px;
-					float: left;}
-
-				#col2{
-					padding-left: 8px; padding-right:  8px; padding-top : 5px; padding-bottom: : 5px;
-					margin-left: 8px; margin-right: 8px; margin-top : 8px; margin-bottom: : 8px;
-					}
-			 .lista_preguntas li{
-			 	font-size: 13 pt;
-			 	border: 3 px solid red;
-			 	float:left;
-			 	width: 50px;
-			 	height: 20px;
-			 	padding: 3px;
-			 	border: 2px solid green;
-			 	margin-right: 5px;
-			 	margin-left: 5px;
-			 	text-align: center;
-			 list-style-type: none;}
 
 			 
 
 			 .listapreguntas li:hover{
 			 	background: #fffac2;
-			 }
+				 }
 
 
 		
