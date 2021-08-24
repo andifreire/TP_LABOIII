@@ -1,21 +1,28 @@
 <head>
 	<style>
-			#main{
-				border: 3px solid red;
-				width: 900px; height: 550px; 
-					}
+
 
 			#main{
-			border: 2px solid red;
+				
+				
+					}
+
+			#body {
+					 background-image: url("./fondo.jpg");
+					 margin: auto;
+			}
+
+			#main{
+		
 			width: 1200px; height: 950px; 
-			padding-left: 1px; padding-right:  1px; padding-top : 1px; padding-bottom: : 1px;
-			margin-left: 1px; margin-right: 1px; margin-top : 1px; margin-bottom: : 1px;	}
+			padding-left: 1px; padding-right:  1px; padding-top : 10px; padding-bottom: : 1px;
+			margin-left: 1px; margin-right: 1px; margin-top : 10px; margin-bottom: : 1px;	}
 				
 			#col1{
-					border: 2px solid green;
+					
 					width: 390px; height: 900px; 
-					padding-left: 5px; padding-right:  5px; padding-top : 15px; padding-bottom: : 5px;
-					margin-left: 13px; margin-right: 13px; margin-top : 15px; margin-bottom: : 15px;
+					padding-left:25px; padding-right: 25px; padding-top : 25px; padding-bottom: : 25px;
+					margin-left: 23px; margin-right: 23px; margin-top : 25px; margin-bottom: : 25px;
 					float: left;}
 
 			#col2{
@@ -31,6 +38,13 @@
 					padding-top: 40px;
 					
 			}
+				#seccion_artesvisuales{
+							margin-top: 50px;
+							margin-right: 50px;
+							margin-left
+							: 50px;
+					
+			}
 			h2#nombreformu {
 
 					text-align: center;
@@ -41,18 +55,42 @@
 
 					
 			}
-		
-		
+			
+			#datos_jugador{
+					font-size: 18pt;
+					 flex-wrap: wrap;
+					align-content: center;
+			}
 			.opcion_formu {
 
 					text-align: center;
-
-					color:#41a8b7;
-					
+					margin-bottom: 15px;
+					margin-top: 15px;
+					margin-left: 15px;
+					margin-right: 15px;
+					margin-bottom: 15px;
+					margin-top: 15px;
+					margin-left: 15px;
+						color:#41a8b7;
+				
 					font-style: italic;
 					font-size: 26pt;
 				 
 					
+			}
+			.menupreguntas li {
+				width:  150 px;
+				height:  50 px;
+			}
+			.opcionformu:hover{
+				text-align: right;
+				color: red;
+				 perspective: 100px;
+			}
+			.opcionformu:hover{
+				text-align: right;
+				color: red;
+				 perspective: 100px;
 			}
 			h1#datos_jugador {
 				
@@ -97,39 +135,39 @@
 			}
 
 			#arte_submitp1{
-				margin-top: 10px;
+				margin-top: 30px;
 				color: black;
 				font-size: 20pt;
 				font-weight: bold;
-				background: blue;
+				background: #dbce7f;
 			}
 			#arte_submitp2{
-				margin-top: 10px;
+				margin-top: 30px;
 				color: black;
 				font-size: 20pt;
 				font-weight: bold;
-				background: blue;
+				background: #dbce7f;
 			}
 			#arte_submitp3{
-				margin-top: 10px;
+				margin-top: 30px;
 				color: black;
 				font-size: 20pt;
 				font-weight: bold;
-				background: blue;
+				background: #dbce7f;
 			}
 			#arte_submitp4{
-				margin-top: 10px;
+				margin-top: 30px;
 				color: black;
 				font-size: 20pt;
 				font-weight: bold;
-				background: blue;
+				background: #dbce7f;
 			}
 			#arte_submitp5{
-				margin-top: 10px;
+				margin-top: 30px;
 				color: black;
 				font-size: 20pt;
 				font-weight: bold;
-				background: blue;
+				background: #dbce7f;
 			}
 			.artepregunta4 img{
 				width:120px;
@@ -226,7 +264,7 @@
 			}
 			p#puntaje_total {
 				margin: auto;
-				padding top: 100px ;
+				padding-top: 150px ;
 				height: 200px;
 				color:blue;
 				font-size: 22px;
@@ -248,6 +286,11 @@
 			.artepregunta_4 img{
 				padding:auto;
 				margin:auto;
+			}
+			.preguntas_arte{
+				text align: center;
+				color:  red;
+
 			}
 			ul#menu {
 				display:none;

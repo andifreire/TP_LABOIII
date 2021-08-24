@@ -35,7 +35,14 @@
 				var botonenviar_arte_p4 = document.getElementById("arte_submitp4");
 				var botonenviar_arte_p5 = document.getElementById("arte_submitp5");
 
-				
+					var advertencia = document.getElementById("advertencia"); //caja de advertencia de formulario
+					var nombre_jugador = document.getElementById("datos_jugador"); // h1 que contiene los datos del jugador
+					var mensaje_bienvenida = document.getElementById("msj_bienvenida");
+					var nombre = document.getElementById("nombre");
+					var apellido = document.getElementById("ape");
+					var formu = document.getElementById("formulario_id");
+					var opcion_hombre=document.getElementById("hombre");
+					var opcion_mujer =document.getElementById("mujer");
 
 		
 				//inicializo las variables del menu principal
@@ -85,7 +92,7 @@
 				function puntaje_arte(puntaje, n_pregunta){
 						var caja_puntajetotal = document.getElementById("puntaje_total");
 						
-						var num = n_pregunta;
+						var num = parseInt (n_pregunta);
 						 console.log("variable puntaje: " + puntaje);
 						if (num =! 0) {puntajetotal = puntajetotal+ puntaje ;};
 						console.log("variable puntajetotal: " + puntajetotal);
@@ -93,9 +100,16 @@
 
 						var puntos_restantes = 100 - (parseInt(puntajetotal))
 
-						if (num==5){caja_puntajetotal.innerHTML= ("FELICITACIONES " + nombre.value.toUpperCase()+ ", HA TERMINADO EL CUESTIONARIO CON " + puntaje_total + " PUNTOS. "); return true;}
-					
-							if (puntajetotal>99) {caja_puntajetotal.innerHTML= ("FELICITACIONES " + nombre.value.toUpperCase()+ ", GANÓ LA RONDA DE ARTE CON "+ puntajetotal + " PUNTOS. "); return true;}
+						if (num==5){
+							caja_puntajetotal.innerHTML= ("FELICITACIONES " + nombre.value.toUpperCase()+ ", HA TERMINADO EL CUESTIONARIO CON " + puntajetotal + " PUNTOS."); }
+												
+					if (num==5&&puntajetotal>99){
+						caja_puntajetotal.style.display="none";
+						 }
+							if (num==5&&puntajetotal<99){
+							console.log("naa");}
+
+							if (puntajetotal>99) {caja_puntajetotal.innerHTML= ("FELICITACIONES " + nombre.value.toUpperCase()+ ", GANÓ LA RONDA DE ARTE CON "+ puntajetotal + " PUNTOS. "); }
 							if (puntajetotal<99) {caja_puntajetotal.innerHTML = (nombre.value.toUpperCase() + ", SU PUNTAJE HASTA AHORA ES DE " + puntajetotal + " PUNTOS. PARA GANAR LA RONDA DE ARTE NECESITA " + puntos_restantes + " PUNTOS MÁS" );}
 						
 					
@@ -117,7 +131,16 @@
 
 
 				}
-		
+			
+				function Accionmujer()
+				{
+					nombre_jugador.innerHTML= ("BIENVENIDA "+ nombre.value.toUpperCase());
+				}
+
+			function Accionhombre()
+				{	
+					nombre_jugador.innerHTML= ("BIENVENIDO "+ nombre.value.toUpperCase());
+				}
 
 				//validacion del formulario
 				document.getElementById("nombreformu").onclick= function()
@@ -134,7 +157,7 @@
 					if ( nombre.value.length < 3 ) 
 					{ 
 						nombre.style.background="red";
-						advertencia.innerHTML= ("Debe ingresar un nombre valido");
+						advertencia.innerHTML= ("DEBE INGRESAR UN NOMBRE VALIDO");
 						return false;
 					}	
 					 if ( nombre.value.length >= 3 ) 
@@ -145,13 +168,7 @@
 					}	
 				
 
-					// se le da la bienvenida al jugador, y se le da dos opciones, jugar o ver las instrucciones
-					if (opcion_mujer.value = 1)
-					nombre_jugador.innerHTML= ("HOLA "+ nombre.value.toUpperCase()+", BIENVENIDA.") ;
-
-					if (opcion_hombre.value = 1)
-					nombre_jugador.innerHTML= ("HOLA "+ nombre.value.toUpperCase()+", BIENVENIDO.") ;
-
+				
 					msj_bienvenida.innerHTML= ("DESEA COMENZAR A JUGAR?");
 					
 
@@ -212,7 +229,7 @@
 								inicializar_arte();
 								puntaje_arte(0, 0);
 
-								
+							
 								//muestro solo el primer boton de la pregunta, una vez que lo aprieto, comienza la pregunta
 										
 									var seccionarte_p1 = document.getElementById("seccion_preguntaarte1");
@@ -242,11 +259,12 @@
 															//apenas elijo una respuesta, escondo la pregunta y muestro si estaba bien o no
 																			respuesta1_neoexpresionismo.onclick = function (){
 																						//inicializo la variable que contiene el puntaje de la opcion
+																							var devolucion = document.getElementById("devolucion");
 																				
 																										var valor_respuesta1a =  35;
 
 																										seccionarte_p1.style.display="none";
-																						
+																										
 																										boton_arte_p1.style.background="green";
 																										
 																										respuesta1_neoexpresionismo.style.display="none";
@@ -262,6 +280,7 @@
 																														//ocurre cuando se presiona el submit 
 																														botonenviar_arte_p1.style.display="none";
 																														 													setTimeout(function(){ 
+																														 														
 																														 												
 																																											artep1.style.display="none";
 																																											boton_arte_p1.style.display="none";
@@ -692,11 +711,11 @@
 													//iniciliazo la variable de devolucion de respuesta
 													var devolucion_ap4 = document.getElementById("devolucion_artep4");
 													//si el usuario toca la imagen numero 1, el programa pasa a esperar que toque otra imagen para evaluar la relacion
-													// EStos son las correspondencias de las imagenes = la 1 - 3, la 2- 5, la 4 -8 y la 7 con la 6
+													// IMPORTANTE: Estos son las correspondencias de las imagenes = la 1 - 3, la 2- 5, la 4 -8 y la 7 con la 6
 													var aciertos = 0;
 													artep4.style.display="block";
-
-													
+													botonenviar_arte_p4.style.display="none";
+													boton_arte_p4.style.display="none";
 													arte_p4_r1.style.display="inline";
 													arte_p4_r2.style.display="inline";
 													arte_p4_r3.style.display="inline";
@@ -708,7 +727,8 @@
 												
 													devolucion_ap4.innerHTML+= nombre.value.toUpperCase()+ ", PRESIONE LA PRIMERA IMAGEN PARA COMENZAR";
 													arte_p4_r1.onclick= function () {   
-														arte_p4_r1.style.border = "2px solid violet"; 
+														boton_arte_p4.style.display="none";
+														arte_p4_r1.style.border = "3px solid violet"; 
 														devolucion_ap4.innerHTML= "AHORA SELECCIONE LA IMAGEN 'HERMANA'";
 														//Los errores
 														arte_p4_r2.onclick= function () {agregarerror_p4();return false;} 
@@ -725,23 +745,33 @@
 																						setTimeout( function() {
 																							
 																							devolucion_ap4.innerHTML= "PRESIONE LA PRIMERA IMAGEN PARA SEGUIR";
+																								
+																							arte_p4_r4.onclick= function () {return false;}
+																							arte_p4_r5.onclick= function () {return false;}
+																							arte_p4_r7.onclick= function () {return false;}
+																							arte_p4_r8.onclick= function () {return false;} 
+																							arte_p4_r6.onclick= function () {return false;} 
 																							arte_p4_r2.onclick= function () {   
-																															arte_p4_r2.style.border = "2px solid violet";
+																																
+																															arte_p4_r2.style.border = "3px solid violet"; 
 																															arte_p4_r4.onclick= function () {agregarerror_p4();return false;}
 																															arte_p4_r6.onclick= function () {agregarerror_p4();return false;}
 																															arte_p4_r7.onclick= function () {agregarerror_p4();return false;}
 																															arte_p4_r8.onclick= function () {agregarerror_p4();return false;}   
 																															arte_p4_r5.onclick = function () { agregaracierto_p4();
-																																								arte_p4_r5.style.border = "2px solid violet"; 
-																																									arte_p4_r2.style.display="none";
+																																								arte_p4_r5.style.border = "3px solid violet"; 
+																																								arte_p4_r2.style.display="none";
 																																								arte_p4_r5.style.display="none";  
 																																								setTimeout( function() {
-																																							
+																																									arte_p4_r4.onclick= function () {return false;}
+																																									arte_p4_r7.onclick= function () {return false;}		
+																																									arte_p4_r8.onclick= function () {return false;} 
+																																									arte_p4_r6.onclick= function () {return false;} 
 																																								//ESPERA A QUE PRESIONE LA SIGUIENTE IMAGEN
 																																								devolucion_ap4.innerHTML+= ", PRESIONE LA PRIMERA IMAGEN PARA SEGUIR";
 																																									arte_p4_r4.onclick= function () {   
 
-																																																		arte_p4_r4.style.border = "2px solid violet"; 
+																																																		arte_p4_r4.style.border = "3px solid violet"; 
 																																																		
 																																																			arte_p4_r6.onclick= function () {agregarerror_p4();return false;}
 																																																			arte_p4_r7.onclick= function () {agregarerror_p4();return false;}
@@ -751,27 +781,27 @@
 																																																									arte_p4_r4.style.display="none";
 																																																									arte_p4_r8.style.display="none";  
 																																																									setTimeout( function() {
-																																																											
+																																																											arte_p4_r7.onclick= function () {return false;}
 																																																											arte_p4_r6.onclick= function () {   
-																																																																arte_p4_r6.style.border = "2px solid violet";   
+																																																																arte_p4_r6.style.border = "3px solid violet";   
 																																																																arte_p4_r7.onclick = function () { agregaracierto_p4();
-																																																																							arte_p4_r7.style.border = "2px solid violet";  
+																																																																							arte_p4_r7.style.border = "3px solid violet";  
 																																																																								arte_p4_r7.style.display="none";
 																																																																									arte_p4_r6.style.display="none"; 
-																																																																							setTimeout( function() {
+																																																																							setTimeout( function() { botonenviar_arte_p4.style.display="block";
 																																																																								
 
-																																																																							}, 500 );
+																																																																							}, 10 );
 																																																																}
 																																																															}
-																																																									}, 500 );
+																																																									}, 10 );
 																																																		}
 																																																	}
-																																							}, 500 );
+																																							}, 10 );
 																																}
 																															}
 
-																					}, 500 );
+																					}, 10 );
 														}
 													}
 
@@ -813,7 +843,7 @@
 
 														arte_p4_aciertos++;
 														devolucion_ap4.innerHTML= ("USTED TIENE "+ arte_p4_aciertos + " ACIERTOS");
-
+														setTimeout(function() {return},1000);
 													};
 
 													function agregarerror_p4(){
@@ -857,7 +887,7 @@
 																}
 																if (arte_p4_errores>10){
 																		puntaje_arte(0, 4)
-																		devolucion_ap4.innerHTML="SU PUNTAJE EN ESTA RONDA ES DE 0 PUNTOS, HASTA MARADONA ERRO PENALES.";
+																		devolucion_ap4.innerHTML="SU PUNTAJE EN ESTA RONDA ES DE 0 PUNTOS, HASTA MARADONA ERRO PENALES!";
 																}
 																	
 																	setTimeout(function(){ 
@@ -1049,9 +1079,11 @@
 											}
 											if (arte_respuesta5<0) {
 												boton_arte_p2.style.background="black";
+												boton_arte_p2.style.border="2px dotted green"
 												var valor_respuesta5e =  0;
-												puntaje_arte(valor_respuesta5e,5);
-												devolucion_ap5.innerHTML = "Muy mal";
+												var pruebaz = puntaje_arte(valor_respuesta5e,5);
+
+												devolucion_ap5.innerHTML = "Mas suerte la proxima!";
 												seccion_artep5.style.display="none";
 												setTimeout(function(){ 		seccion_arte.style.display="none";
 																			devolucion_ap5.style.display="none";
@@ -1062,12 +1094,16 @@
 											
 
 									 	}
+
+
+
 															
 																	
 						
 				};
-
-}
+					 
+				}
+			
 			
 
 			

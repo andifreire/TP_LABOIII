@@ -1,11 +1,458 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<style type="text/css">
+		#body{
+
+			background-image: url("./fondo.jpg");
+		}
+			#main{
+				
+				margin: auto;
+				width: auto; 
+				height: 650px; 
+				 background-image: url("./fondo.jpg");
+
+					}
+
+			#main{
+		
+			width: 1200px; height: 950px; 
+			padding-left: 1px; padding-right:  1px; padding-top : 10px; padding-bottom: : 1px;
+			margin-left: 1px; margin-right: 1px; margin-top : 10px; margin-bottom: : 1px;	}
+				
+			#col1{
+					
+					width: 390px; height: 900px; 
+					padding-left:25px; padding-right: 25px; padding-top : 25px; padding-bottom: : 25px;
+					margin-left: 23px; margin-right: 23px; margin-top : 25px; margin-bottom: : 25px;
+					float: left;
+				}
+
+			#col2{
+					
+					padding-left: 8px; padding-right:  8px; padding-top : 5px; padding-bottom: : 5px;
+					margin-left: 8px; margin-right: 8px; margin-top : 8px; margin-bottom: : 8px;
+					}
+
+			#formulario_id{
+
+					text-align: center;
+
+					padding-top: 40px;
+					color: black;
+					
+			}
+				#seccion_artesvisuales{
+							margin-top: 50px;
+							margin-right: 50px;
+							margin-left
+							: 50px;
+					
+			}
+			h2#nombreformu {
+
+					text-align: center;
+					color:black;
+					font-size: 36pt;
+					padding-top: 35px; 
+					
+
+					
+			}
+			
+			#datos_jugador{
+					font-size: 18pt;
+					 flex-wrap: wrap;
+					align-content: center;
+			}
+			.opcion_formu {
+
+					text-align: center;
+					margin-bottom: 15px;
+					margin-top: 15px;
+					margin-left: 15px;
+					margin-right: 15px;
+					margin-bottom: 15px;
+					margin-top: 15px;
+					margin-left: 15px;
+						color:black;
+				
+					font-style: italic;
+					font-size: 26pt;
+				 
+					
+			}
+			.opcionformu:hover{
+				text-align: right;
+				color: red;
+				 perspective: 100px;
+			}
+			.opcionformu:hover{
+				text-align: right;
+				color: red;
+				 perspective: 100px;
+			}
+			#datos_jugador {
+				
+				padding top: 1px ;
+				
+				color:black;
+				font-size: 22px;
+				font-style: italic;
+				text-align: center;
+			}
+				aside#contenedorinstrucciones {
+				
+				padding-top: 4px ;
+				padding-right:  4px ;
+				padding-left: 4px ;
+				padding-bottom: : 4px ;
+				color:black;
+				font-size: 15px;
+				font-style: italic;
+				text-align: center;
+				float:right;
+			}
+
+			h2#msj_bienvenida {
+				
+				padding top: 1px ;
+				
+				color: violet;
+				font-size: 26px;
+				
+				text-align: center;
+			}
+			div.preguntas_arte {
+				color: black;
+				font-size: 14pt;
+				text-align: center;
+				
+				padding-top: 10px;
+				padding-left:10px;
+				padding-right:10px;
+				padding-bottom:10px;
+				height:  165px;
+				widht:  165 px;
+			}
+
+			#arte_submitp1{
+				margin-top: 30px;
+				color: black;
+				font-size: 20pt;
+				font-weight: bold;
+				background: #dbce7f;
+			}
+			#arte_submitp2{
+				margin-top: 30px;
+				color: black;
+				font-size: 20pt;
+				font-weight: bold;
+				background: #dbce7f;
+			}
+			#arte_submitp3{
+				margin-top: 30px;
+				color: black;
+				font-size: 20pt;
+				font-weight: bold;
+				background: #dbce7f;
+			}
+			#arte_submitp4{
+				margin-top: 30px;
+				color: black;
+				font-size: 20pt;
+				font-weight: bold;
+				background: #dbce7f;
+			}
+			#arte_submitp5{
+				margin-top: 30px;
+				color: black;
+				font-size: 20pt;
+				font-weight: bold;
+				background: #dbce7f;
+			}
+			.artepregunta4 img{
+				width:120px;
+				height: 120px;
+				float:left;
+
+			}
+			
+			.opcionesc
+			.opcionescomienzo{
+				
+				margin-top:15px ;
+				margin-left:  5px ;
+				margin-bottom: 15px ;
+				margin-right: 5px ;
+				padding-top: 5px ;
+				padding-right: : 5px ;
+				padding-left:  5px ;
+				padding-bottom:   5px ;
+				background:#4288b4;
+				display:inline;
+				float:left;
+				font-size: 20px;
+				
+				text-align: center;
+
+			} 
+			h2#titulo_arte{
+				text-align: center;
+
+				color:black;
+				opacity: 0.4;
+				font-weight: bold;
+			}
+				ul.lista_preguntas li:hover{
+						background: #2a5fb2;
+			}
+						
+			}
+				ul.lista_preguntas li{
+
+						border: 3px solid red;
+						font-size: 15pt;
+						color:#1a18b7;
+						text-align: center;
+
+						
+			}
+
+			ul#menu li{
+						border: 3px solid red;
+						font-size: 25pt;
+						color:#1a18b7;
+						text-align: center;
+						
+			}
+			ul#menu li:hover{
+					
+					background: #2a5fb2;
+						
+			}
+			#titulo {padding-left: 25px;
+					color : black;
+					opacity: 0.2;}
+
+				 .lista_preguntas li{
+			 	font-size: 13 pt;
+			 	border: 3 px solid red;
+			 	float:left;
+			 	width: 280px;
+			 	height: 50px;
+			 	border: 4px solid green;
+			 	margin-right: 5px;
+			 	margin-left: 18px;
+			 	text-align: center;
+			 	    margin-left: 250px;
+    margin-top: 450px;
+    padding-top: 20px;
+
+				 }
+
+			  ul#menu li{
+			 	font-size: 13 pt;
+			 	border: 2 px solid red;
+			 	float:left;
+			 	margin:auto;
+			 	border: 2px solid green;
+			 	margin-right: 5px;
+			 	margin-left: 5px;
+			 	text-align: center;
+				list-style-type: none;
+			    margin-top: 40px;
+			    margin-left: 60px;
+			    padding-left: 30px;
+			    padding-right: 30px;
+			    padding-top: 30px;
+			    padding-bottom: 30px;}
+
+				strong#advertencia {
+						font-size: 15pt;
+					
+					}
+			.opcionformu {
+
+			}
+				.menupreguntas {
+			
+			}
+			p#puntaje_total {
+				margin: auto;
+				padding top: 100px ;
+				height: 200px;
+				color:blue;
+				font-size: 22px;
+				text-align: center;
+				padding-top:  100px;
+			}
+			.preguntas_arte div{
+			
+			}
+			section#seccion_musica {display:none;}
+			section#seccion_arquitectura {display:none;}
+			section#seccion_moda {display:none;}
+			section#seccion_artesvisuales {display:none;}
+			/**/
+			div#arte_p4 img{
+				height:165px;
+				width: 165px;
+				
+			}
+
+			.arte_preguinta3 img {
+				height: 200px ;
+				width:  200px ;
+			}
+			.artepregunta_4 img{
+				padding:auto;
+				margin:auto;
+			}
+			.preguntas_arte{
+				text align: center;
+				color:  red;
+
+			}
+			ul#menu {
+				display:none;
+			}
+			.formularios{
+
+				}
+			
+			#puntaje div{border:2px solid red;
+						padding:auto;
+						margin:auto;
+						color: green;
+						}
+		
+	/*			div.preguntas#p1{
+					color:green;
+					background: #;
+					
+				}
+				div.preguntas#p2{
+					color:green;
+					background: #;
+				
+					
+				}
+				div.preguntas#p3{
+					color:green;
+					background: #;
+				
+				}
+				div.preguntas#p4{
+					color:green;
+					background: #a4f4c2;
+				
+				}
+				div.preguntas#p5{
+					color:green;
+					background: #a4f4c2;
+				
+				}
+
+
+		
+ */			
+ 				li#opcion1_bienvenida:hover{
+ 					background:  grey;
+ 				}
+ 				li#opcion2_bienvenida:hover{
+ 					background: pink;
+ 				}
+
+ 				div#seccion_preguntaarte3 img{
+ 						height: 250px;
+ 						widht: 250px;
+ 				}
+ 			li#opcion1_bienvenida {
+ 					border-style: double;
+ 					border: 5pt solid blue;
+ 					font-size: 20pt;
+ 					display: block;
+ 					text-align: center;
+    				margin-bottom: 25px;
+ }
+ 	li#opcion2_bienvenida {
+ 					border-style: double;
+ 					border: 5pt solid violet; 
+ 					font-size:  20pt;
+ 						display: block;
+ 						text-align: center;
+    				margin-bottom: 25px;
+ }
+ 			.seccion {
+ 			
+ 			}
+ 			h1#datos_jugador{
+ 				margin:auto;
+ 				padding:auto;
+ 				font-size: 14pt;
+ 				color:#1a18f4;
+ 			}
+ 			
+ 			
+ 						div.preguntas h2 {
+					color: green;
+					}
+
+			.reglasdejuego {
+				display: none;
+			}
+
+			.formularios {
+							color: black;
+							font-size: 8pt;
+							font-style: italic;
+							
+							
+							height:50px
+					}	
+		
+			div.preguntas{
+					color: black
+					font-style: arial 9pt;
+					text-align:center;}
+			strong#advertencia {
+				font-size: 7px;
+				text-align: left;
+			}
+		
+			#img {
+				 width:250px;
+  			height: 250px;
+  			border: black 1px solid;    }
+  	/*
+  	margin-left: auto;
+  	margin-right: auto;
+  	background-color: lightblue;
+  	background-image: url("verde.jpg");
+  	background-position: right bottom;
+  	background-repeat: no-repeat;
+  	*/
+ 
+
+			 
+
+			 .listapreguntas li:hover{
+			 	background: #fafac2;
+				 }
+
+
+		
+			 #foto1 {
+			 	height:250px;
+			 	width:200px;
+			 }</style>
 		<title>Trabajo practico</title>
-	<link href="style_main.css" rel="stylesheet" type="text/css"/>  
+	
 </head>
 <body>
-		<h1 id ="titulo">CUESTIONARIO SOBRE HISTORIA DEL ARTE- UTN HAEDO</h1>
+		<h1 id ="titulo"></h1>
 	
 		
 
@@ -30,7 +477,7 @@
 			 	<li class="menu_item" id="menu_arquitectura">Arquitectura</li>
 			</ul>
 
-			<aside class="reglasdejuego" id= "contenedorinstrucciones">El juego consiste en responder una serie de preguntas relacionadas a una rama artistica. Para iniciar debe escoger solo una cateogria y debera responder 5 preguntas. Si no cumple con el requisito minimo de puntos en la primera vuelta, queda eliminado del juego, y si lo cumple sigue avazando y se desbloquea el resto de las categorias. La idea es terminar con la mayor cantidad de puntos, el maximo a alcanzar es 2000 puntos. 
+			<aside class="reglasdejuego" id= "contenedorinstrucciones">El juego consiste en responder una serie de preguntas relacionadas a una rama artistica. Para iniciar debe escoger solo una cateogria y debera responder 5 preguntas. Si no cumple con el requisito minimo de puntos en la primera vuelta, queda eliminado del juego, y si lo cumple sigue avazando y se desbloquea el resto de las categorias. La idea es terminar con la mayor cantidad de puntos.
 			</aside>
 
 			<p id="puntaje_total"></p>
@@ -49,10 +496,6 @@
 					
 						<p id="reloj"></p>
 						
-							<label for="hombre" class="opcion_formu">Hombre:</label>
-							<input type="radio" name ="sexo" value="1" id="hombre"/>
-							<label for ="mujer" class="opcion_formu">Mujer:</label>
-							<input type="radio" name ="sexo" value="1" id="mujer"/>
 							
 						<h2 id="nombreformu">INICIAR CUESTIONARIO</h2>
 
@@ -62,13 +505,13 @@
 			
 
 				<section class="seccion" id="seccion_artesvisuales">
-					
+							
 					<h2 id="titulo_arte">Seccion artes visuales</h2>
 
 					<div class="preguntas_arte" id="arte_p1">
 						<div id="seccion_preguntaarte1">
 							<h2>¿A que estilo pictorico pertenece esta obra?</h2>
-							<img id="img" src="foto1.jpg" alt="una habitacion de color amarilla con las paredes distorsionadas, con un gato durmiendo en el suelo" />
+							<img id="img" src="https://i0.wp.com/dibujoypintura.net/wp-content/uploads/2018/04/Obras-Expresionismo-Abstracto-De-Sonia-Gechtoff.jpg?resize=540%2C442&ssl=1" alt="una habitacion de color amarilla con las paredes distorsionadas, con un gato durmiendo en el suelo" />
 							<br/>
 							<label for="r1_romanticismo">Romaticismo</label>
 							<input type="radio" name="arte_r1" value="2" id="r1_romanticismo"/>
@@ -86,7 +529,7 @@
 							<input type="radio" name="arte_r1" value="2" id="r1_rococo"/>
 							<br/>
 						</div>
-							<input type="submit" name="arte_r1" value="ENVIAR PREGUNTA" id ="arte_submitp1"/> 
+							<input type="submit" class="submit" name="arte_r1" value="ENVIAR PREGUNTA" id ="arte_submitp1"/> 
 							<p class="devoluciones" id="devolucion_artep1"></p>
 							<br/>
 						
@@ -123,36 +566,36 @@
 								<input type="checkbox" name="arte_r2" value="1" id="r2_berni"/>
 								<br/>
 							</div>
-						<input type="submit" name ="enviararte_p2" value="ENVIAR PREGUNTA" id ="arte_submitp2"/>
+						<input type="submit" class="submit"  name ="enviararte_p2" value="ENVIAR PREGUNTA" id ="arte_submitp2"/>
 						<p class="devoluciones" id="devolucion_artep2"></p>
 						
 					</div>
 
 					<div class="preguntas_arte" id="arte_p3">
 						<div id="seccion_preguntaarte3">
-							<h2>¿De que pintor español son los siguientes diseños?</h2>
-							<img class="artepregunta_3" src="fotoartepreg3_1.jpg" alt="" />
+							<h2>¿De que pintor español son las siguientes pinturas?</h2>
+							<img class="artepregunta_3" src="https://uploads6.wikiart.org/images/francisco-goya/witches-sabbath-1789.jpg!Large.jpg" alt="" />
 							
-							<img class="artepregunta_3" src="fotoartepreg3_2.jpg" alt="" />
+							<img class="artepregunta_3" src="https://uploads2.wikiart.org/00237/images/francisco-goya/the-straw-manikin.jpg!Large.jpg" alt="" />
 							
-							<img class="artepregunta_3" src="fotoartepreg3_3.jpg" alt="" />
+							<img class="artepregunta_3" src="https://uploads8.wikiart.org/images/francisco-goya/the-injured-mason-1787.jpg!Large.jpg" alt="" />
 						
-							<img class="artepregunta_3" src="fotoartepreg3_4.jpg" alt="una habitacion de color amarilla con las paredes distorsionadas, con un gato durmiendo en el suelo" />
+							<img class="artepregunta_3" src="https://uploads4.wikiart.org/images/francisco-goya/fire-at-night-1794.jpg" alt="una habitacion de color amarilla con las paredes distorsionadas, con un gato durmiendo en el suelo" />
 							<br/>
 							<label for="r3_dvelazquez">Diego Velazquez</label>
-							<input type="radio" name="arte_r3" value="0" id="r3_dvelazquez"/>
+							<input type="radio" name="arte_r3" value="1" id="r3_dvelazquez"/>
 							<br/>
 							<label for="r3_frida">Frida Kahlo</label>
-							<input type="radio" name="arte_r3" value="0" id="r3_frida"/>
-							<br/>
-							<label for="r3_ribera">José de Ribera</label>
-							<input type="radio" name="arte_r3" value="0" id="r3_ribera"/>
-							<br/>
-							<label for="r3_elgreco">El Greco</label>
-							<input type="radio" name="arte_r3" value="0" id="r3_elgreco"/>
+							<input type="radio" name="arte_r3" value="1" id="r3_frida"/>
 							<br/>
 							<label for="r3_goya">Francisco de Goya</label>
-							<input type="radio" name="arte_r3" value="1" id="r3_goya"/>
+							<input type="radio" name="arte_r3" value="2" id="r3_ribera"/>
+							<br/>
+							<label for="r3_elgreco">El Greco</label>
+							<input type="radio" name="arte_r3" value="1" id="r3_elgreco"/>
+							<br/>
+							<label for="r3_ribera">Eduard Manet</label>
+							<input type="radio" class="submit"  name="arte_r3" value="1" id="r3_goya"/>
 							<br/>
 						</div>
 							<input type="submit" name="arte_r3" value="ENVIAR PREGUNTA" id ="arte_submitp3"/>
@@ -163,25 +606,25 @@
 				
 					<div class="preguntas_arte" id="arte_p4">
 						
-							<h2>Relacione las siguientes imagenes entre si</h2>
+							<h2>La consigna de este juego es la detececcion de similitudes entre dos imagenes. Para comenzar a jugar toque la primera imagen.</h2>
 
-							<img class="artepregunta_4" id="arte_preg4_img1" src="fotoartepreg4_1.jpg" alt="" />
+							<img class="artepregunta_4" id="arte_preg4_img1" src="https://imagenes.elpais.com/resizer/CZYYL96KfD97lCd1EKvWpAfTxHc=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/VIIG7G2N2F5LBVCE5NDWLG4KRY.jpg" alt="" />
 							
-							<img class="artepregunta_4" id="arte_preg4_img2" src="fotoartepreg4_2.jpg" alt="" />
+							<img class="artepregunta_4" id="arte_preg4_img2" src="http://static-1.ivoox.com/audios/0/0/5/7/3681585077500_XXL.jpg" alt="" />
 							
-							<img class="artepregunta_4" id="arte_preg4_img3" src="fotoartepreg4_3.jpg" alt="" />
+							<img class="artepregunta_4" id="arte_preg4_img3" src="https://img2.codigonuevo.com/1a/22/3e/fallen_angel-basquiat-codigo-nuevo.jpg" alt="" />
 						
-							<img class="artepregunta_4" id="arte_preg4_img4" src="fotoartepreg4_4.jpg" alt="" />
+							<img class="artepregunta_4" id="arte_preg4_img4" src="https://estaticos.muyhistoria.es/media/cache/1140x_thumb/uploads/images/gallery/59106d635cafe853363c9869/picasso-llora.jpg" alt="" />
 
-							<img class="artepregunta_4" id="arte_preg4_img5" src="fotoartepreg4_5.jpg" alt="" />
+							<img class="artepregunta_4" id="arte_preg4_img5" src="https://estaticos.muyhistoria.es/media/cache/680x_thumb/uploads/images/gallery/57fb80555cafe856108b456b/monet3.jpg" alt="" />
 							
-							<img class="artepregunta_4"  id="arte_preg4_img6" src="fotoartepreg4_6.jpg" alt="" />
+							<img class="artepregunta_4"  id="arte_preg4_img6" src="https://ichef.bbci.co.uk/news/640/amz/worldservice/live/assets/images/2009/06/05/090605182710_sp_capilla1_sixtina_g_226x1.jpg" alt="" />
 							
-							<img class="artepregunta_4" id="arte_preg4_img7" src="fotoartepreg4_7.jpg" alt="" />
+							<img class="artepregunta_4" id="arte_preg4_img7" src="https://images.clarin.com/2020/10/12/el-david-la-famosa-escultura___Zi8_ll9i4_720x0__1.jpg" alt="" />
 						
-							<img class="artepregunta_4" id="arte_preg4_img8" src="fotoartepreg4_8.jpg" alt="" />
+							<img class="artepregunta_4" id="arte_preg4_img8" src="https://cdn.culturagenial.com/es/imagenes/jaqueline-de-manos-cruzadas.jpg" alt="" />
 
-							<input type="submit" name ="enviararte_p4" value="ENVIAR PREGUNTA" id ="arte_submitp4"/>
+							<input type="submit" class="submit"  name ="enviararte_p4" value="ENVIAR PREGUNTA" id ="arte_submitp4"/>
 							<p  class="devoluciones" id="devolucion_artep4"></p>
 						
 						
@@ -200,7 +643,7 @@
 								<label for="r5_fragonard">Jean-Honoré Fragonard</label>
 								<input type="checkbox" name="arte_r5" value="1" id="r5_fragonard"/>
 								<br/>
-								<label for="r5_ma">Miguel A</label>
+								<label for="r5_ma">Miguel Angel</label>
 								<input type="checkbox" name="arte_r5" value="1" id="r5_ma"/>
 								<br/>
 								<label for="r5_gaugin">Paul Gaugin</label>
@@ -209,17 +652,18 @@
 								<label for="r5_monet">Claude Monet</label>
 								<input type="checkbox" name="arte_r5" value="1" id="r5_monet"/>
 								<br/>
-								<label for="r5_rafael">Rafael</label>
+								<label for="r5_rafael">Rafael Sanzio</label>
 								<input type="checkbox" name="arte_r5" value="1" id="r5_rafael"/>
 								<br/>
 								<label for="r5_borgoña">Juan de Borgoña</label>
 								<input type="checkbox" name="arte_r5" value="1" id="r5_borgoña"/>
 								<br/>
 								<label for="r5_degas">Edgard Degas</label>
-								<input type="checkbox" name="arte_r5" value="1" id="r5_degas"/>
+								<input type="checkbox"   name="arte_r5" value="1" id="r5_degas"/>
 								<br/>
 							</div>
-						<input type="submit" name ="enviarartep5" value="ENVIAR PREGUNTA" id ="arte_submitp5"/>
+						<input type="submit"  name ="enviarartep5" value="ENVIAR PREGUNTA" id ="arte_submitp5"/>
+			
 						<p  class="devoluciones" id="devolucion_artep5"></p>
 					</div>
 
@@ -227,11 +671,11 @@
 				
 
 					<ul class="lista_preguntas">
-						<li id="arte_preg1">1</li>
-						<li id="arte_preg2">2</li>
-						<li id="arte_preg3">3</li>
-						<li id="arte_preg4">4</li>
-						<li id="arte_preg5">5</li>
+						<li id="arte_preg1" class="menupreguntas">PREGUNTA 1. PRESIONE AQUI PARA EMPEZAR EL CAMINO </li>
+						<li id="arte_preg2" class="menupreguntas">PREGUNTA 2.</li>
+						<li id="arte_preg3" class="menupreguntas">PREGUNTA 3</li>
+						<li id="arte_preg4" class="menupreguntas">PREGUNTA 4</li>
+						<li id="arte_preg5" class="menupreguntas">PREGUNTA 5</li>
 					</ul>
 						
 				</section>
@@ -240,7 +684,1113 @@
 	</div>
 
 
-		<script type="text/javascript" src="javascript_labo3_tp.js"> </script> 
+		<script type="text/javascript">
+		 "use strict"
+				
+
+				var seccion_moda = document.getElementById("seccion_moda");
+				var seccion_arquitectura = document.getElementById("seccion_arquitectura");
+				var seccion_arte = document.getElementById("seccion_artesvisuales");
+				var seccion_musica = document.getElementById("seccion_musica");
+			
+
+			
+			
+				//declaro variables que representan al div que contiene las 5 preguntas
+
+				var artep1 = document.getElementById("arte_p1");
+				var artep2 = document.getElementById("arte_p2");
+				var artep3 = document.getElementById("arte_p3");
+				var artep4 = document.getElementById("arte_p4");
+				var artep5 = document.getElementById("arte_p5");
+
+			
+
+			    // paso a declarar las variables que contienen el li que contiene al elemento del boton de cada pregunta
+
+			    var boton_arte_p1 = document.getElementById("arte_preg1");
+				var boton_arte_p2 = document.getElementById("arte_preg2");
+				var boton_arte_p3 = document.getElementById("arte_preg3");
+				var boton_arte_p4 = document.getElementById("arte_preg4");
+				var boton_arte_p5 = document.getElementById("arte_preg5");
+
+			    //inicializo a continuacion, las variables que contienen el "submit" de cada pregunta
+
+				var botonenviar_arte_p1 = document.getElementById("arte_submitp1");
+				var botonenviar_arte_p2 = document.getElementById("arte_submitp2");
+				var botonenviar_arte_p3 = document.getElementById("arte_submitp3");
+				var botonenviar_arte_p4 = document.getElementById("arte_submitp4");
+				var botonenviar_arte_p5 = document.getElementById("arte_submitp5");
+
+				
+
+		
+				//inicializo las variables del menu principal
+				
+				var menu_arte = document.getElementById ("menu_artesvisuales");
+				var menu_moda = document.getElementById("menu_moda");
+				var menu_arquitectura = document.getElementById("menu_arquitectura");
+				var menu_musica = document.getElementById("menu_musica");
+			//declaro las funciones "globales"
+
+				function incializar_prog(){
+				seccion_arquitectura.style.display= "none";
+				seccion_musica.style.display= "none";
+				seccion_moda.style.display= "none";
+				seccion_arte.style.display= "block";
+			    }
+
+				function inicializar_arte(){
+						//muestro la seccion de arte y borro el resto
+						seccion_arte.style.display="block";
+						
+						//escondo el menu
+						var menu_categorias = document.getElementById("menu");
+						menu_categorias.style.display= "none";
+
+						//Escondo las preguntas
+						artep1.style.display = "none";
+						artep2.style.display = "none";
+						artep3.style.display = "none";
+						artep4.style.display = "none";
+						artep5.style.display = "none";
+
+						boton_arte_p1.style.display="block";
+						boton_arte_p2.style.display="none";
+							boton_arte_p3.style.display="none";
+							boton_arte_p4.style.display="none";
+							boton_arte_p5.style.display="none";
+
+
+				}	
+
+				
+
+
+				var puntajetotal = 0;
+
+				function puntaje_arte(puntaje, n_pregunta){
+						var caja_puntajetotal = document.getElementById("puntaje_total");
+						
+					
+						 console.log("variable puntaje: " + puntaje);
+						if (num =! 0) {puntajetotal = puntajetotal+ puntaje ;};
+						console.log("variable puntajetotal: " + puntajetotal);
+						console.log("variable num: " + num);
+						var num = parseInt(n_pregunta);
+
+				
+												
+				
+							
+
+						var puntos_restantes = 100 - (parseInt(puntajetotal))
+
+						
+												
+					
+
+							if (puntajetotal>99) {
+								if (num==5){
+								caja_puntajetotal.innerHTML= ("FELICITACIONES " + nombre.value.toUpperCase()+ ", GANÓ EL JUEGO CON "+ puntajetotal + " PUNTOS."); }
+								if (num<5){
+								caja_puntajetotal.innerHTML= ("FELICITACIONES " + nombre.value.toUpperCase()+ ", GANÓ LA RONDA DE ARTE CON "+ puntajetotal + " PUNTOS. PUEDE SEGUIR JUGANDO HASTA COMPLETAR LA RONDA."); }
+
+							}
+							if (puntajetotal<99) {
+								if (num==5){
+								caja_puntajetotal.innerHTML= (nombre.value.toUpperCase()+ ", HA TERMINADO EL JUEGO CON "+ puntajetotal +". LAMENTABLEMENTE HA PERDIDO, PERO GRACIAS POR JUGAR. AH... Y PUEDE INTENTARLO DE NUEVO."); }
+								if (num<5)
+								{
+								caja_puntajetotal.innerHTML = (nombre.value.toUpperCase() + ", SU PUNTAJE HASTA AHORA ES DE " + puntajetotal + " PUNTOS. PARA GANAR LA RONDA DE ARTE NECESITA " + puntos_restantes + " PUNTOS MÁS" );}
+						
+					
+				
+										
+											
+
+												/* if (puntaje_total>140) {caja_puntajetotal.innerHTML+= "SU DESEMPEÑO HA SIDO EXCELENTE";}
+												if (puntaje_total<140&&puntaje_total>120) {caja_puntajetotal.innerHTML+= " SU DESEMPEÑO FUE EXTRAORDINARIO!";}
+												if (puntaje_total>100&&puntaje_total<120) {caja_puntajetotal.innerHTML+= " SU DESEMPEÑO FUE MUY BUENO, SE NOTA QUE SOS UNA PERSONA INSTRUIDA.";}
+												if (puntaje_total<100) {caja_puntajetotal.innerHTML+= "SU DESEMPEÑO PUEDE MEJORAR, SUERTE PARA LA PROXIMA. ";}
+												return false; */
+							}
+										
+
+				
+					
+					
+					
+
+
+				}
+				var opcion_comenzarjuego = document.getElementById("opcion1_bienvenida");
+				var opcion_instrucciones = document.getElementById("opcion2_bienvenida");
+				opcion_instrucciones.style.display="none";
+			opcion_comenzarjuego.style.display="none";
+				//validacion del formulario
+				document.getElementById("nombreformu").onclick= function()
+				{	
+					
+					var advertencia = document.getElementById("advertencia"); //caja de advertencia de formulario
+					var nombre_jugador = document.getElementById("datos_jugador"); // h1 que contiene los datos del jugador
+					var mensaje_bienvenida = document.getElementById("msj_bienvenida");
+					var nombre = document.getElementById("nombre");
+					var apellido = document.getElementById("ape");
+					var formu = document.getElementById("formulario_id");
+					var opcion_hombre=document.getElementById("hombre");
+					var opcion_mujer =document.getElementById("mujer");
+					if ( nombre.value.length < 3 ) 
+					{ 
+						nombre.style.background="red";
+						advertencia.innerHTML= ("DEBE INGRESAR UN NOMBRE VALIDO");
+						return false;
+					}	
+					 if ( nombre.value.length >= 3 ) 
+					{  
+						nombre.style.background="green";
+						advertencia.style.display= "none";
+
+					}	
+				
+
+				
+
+					msj_bienvenida.innerHTML= ("DESEA COMENZAR A JUGAR?");
+					
+
+					var opcion_comenzarjuego = document.getElementById("opcion1_bienvenida");
+					var opcion_instrucciones = document.getElementById("opcion2_bienvenida");
+					var instrucciones = document.getElementById("contenedorinstrucciones");
+					//despliego en pantalla las dos opciones
+					opcion_comenzarjuego.style.display= "block";
+					opcion_instrucciones.style.display= "block";
+					formu.style.display="none";
+					var menu_categorias = document.getElementById("menu");
+					
+				
+					opcion_instrucciones.onclick= function(){
+						
+					opcion_instrucciones.style.display= "none";
+
+						instrucciones.style.display= "block";
+						menu_categorias.style.display= "none";
+					}
+
+					opcion_comenzarjuego.onclick= function (){
+							menu_categorias.style.display= "block";
+
+							menu_arte.style.display="inline";
+							menu_moda.style.display="none";
+							menu_arquitectura.style.display="none";
+							menu_musica.style.display="none";
+
+							instrucciones.style.display= "none";
+							nombre_jugador.style.display="none";
+							mensaje_bienvenida.style.display="none";
+							opcion_instrucciones.style.display="none";
+							opcion_comenzarjuego.style.display="none";
+							
+							return;
+					}
+
+				}
+
+				//creo una funcion de inicializacion que se ejecuta cada vez que el boton de menu de arte es presionado
+				
+
+
+				function reloj() {
+					  var today = new Date();
+					  var h = today.getHours();
+					  var m = today.getMinutes();
+					  var s = today.getSeconds();
+					  // add a zero in front of numbers<10
+					  
+						
+					  t = setTimeout(function(){ reloj() }, 500);
+				}
+					
+				menu_arte.onclick= function(){
+
+								inicializar_arte();
+								puntaje_arte(0, 0);
+
+								
+								//muestro solo el primer boton de la pregunta, una vez que lo aprieto, comienza la pregunta
+										
+									var seccionarte_p1 = document.getElementById("seccion_preguntaarte1");
+									var seccionarte_p2 = document.getElementById("seccion_preguntaarte2");
+									var seccionarte_p3 = document.getElementById("seccion_preguntaarte3");
+									var seccionarte_p5 = document.getElementById("seccion_preguntaarte5");
+
+										var arte_puntaje = 0;
+										
+										//PREGUNTA 1
+										//si el usuario elige la respuesta correcta el icono se muestra verde
+										//declaro una variable por cada respuesta, dependiendo la que elija el usuario
+										var respuesta1_romanticismo=document.getElementById("r1_romanticismo");
+										var respuesta1_surrealismo=document.getElementById("r1_surrealismo");
+										var respuesta1_neoexpresionismo=document.getElementById("r1_neoexpresionismo");
+										var respuesta1_minimalismo=document.getElementById("r1_minimalismo");
+										var respuesta1_rococo=document.getElementById("r1_rococo");
+
+										var seccion_artep1 =document.getElementById("seccion_preguntaarte1");
+										
+										var seccion_artep3 =document.getElementById("seccion_preguntaarte3");
+										var seccion_artep5 =document.getElementById("seccion_preguntaarte5");
+
+										//escondo el boton de submit
+							
+										boton_arte_p1.onclick = function () {
+															artep1.style.display="block";
+															//apenas elijo una respuesta, escondo la pregunta y muestro si estaba bien o no
+																			respuesta1_neoexpresionismo.onclick = function (){
+																						//inicializo la variable que contiene el puntaje de la opcion
+																				
+																										var valor_respuesta1a =  25;
+
+																										seccionarte_p1.style.display="none";
+																						
+																										boton_arte_p1.style.background="green";
+																										
+																										respuesta1_neoexpresionismo.style.display="none";
+																										respuesta1_surrealismo.style.display="none";
+																										respuesta1_minimalismo.style.display="none";
+																										respuesta1_rococo.style.display="none";
+																										respuesta1_romanticismo.style.display="none";
+																										puntaje_arte(valor_respuesta1a, 1);
+																										seccion_preguntaarte1.style.display="none";
+
+																												botonenviar_arte_p1.onclick= function()
+																													{	
+																														//ocurre cuando se presiona el submit 
+																														botonenviar_arte_p1.style.display="none";
+																														 													setTimeout(function(){ 
+																														 												
+																																											artep1.style.display="none";
+																																											boton_arte_p1.style.display="none";
+																																										    boton_arte_p2.style.display="block"; 
+																																																					} , 1000);
+																													}
+
+																				};
+
+																			respuesta1_surrealismo.onclick = function (){
+
+																						
+
+																										seccionarte_p1.style.display="none";
+																										var valor_respuesta1b =  5;
+																										boton_arte_p1.style.background="red";
+																										
+																										respuesta1_neoexpresionismo.style.display="none";
+																										respuesta1_surrealismo.style.display="none";
+																										respuesta1_minimalismo.style.display="none";
+																										respuesta1_rococo.style.display="none";
+																										respuesta1_romanticismo.style.display="none";
+																										 puntaje_arte(valor_respuesta1b, 1);
+																										seccion_preguntaarte1.style.display="none";
+
+																												botonenviar_arte_p1.onclick= function()
+																													{	
+																														botonenviar_arte_p1.style.display="none";
+																														//ocurre cuando se presiona el submit que escondi previamente (por las dudas lo dejo)
+																														 													setTimeout(function(){ 
+																														 													
+																																											artep1.style.display="none";
+																																											boton_arte_p1.style.display="none";
+																																										    boton_arte_p2.style.display="block"; 
+																																																					} , 1000);
+																													}
+																				};
+																			respuesta1_romanticismo.onclick = function (){
+
+																										seccionarte_p1.style.display="none";
+																										var valor_respuesta1c =  0;
+																										boton_arte_p1.style.background="red";
+																										respuesta1_neoexpresionismo.style.display="none";
+																										respuesta1_surrealismo.style.display="none";
+																										respuesta1_minimalismo.style.display="none";
+																										respuesta1_rococo.style.display="none";
+																										respuesta1_romanticismo.style.display="none";
+																										puntaje_arte(valor_respuesta1c, 1);
+
+																										seccion_preguntaarte1.style.display="none";
+
+																												botonenviar_arte_p1.onclick= function()
+																													{	
+																														botonenviar_arte_p1.style.display="none";
+																														//ocurre cuando se presiona el submit que escondi previamente (por las dudas lo dejo)
+																														 													setTimeout(function(){ 
+																														 													
+																																											artep1.style.display="none";
+																																											boton_arte_p1.style.display="none";
+																																										    boton_arte_p2.style.display="block"; 
+																																																					} , 1000);
+																													}
+																				};
+																			respuesta1_minimalismo.onclick = function (){
+
+																								
+																											seccionarte_p1.style.display="none";
+																											var valor_respuesta1d =  0;
+																											boton_arte_p1.style.background="red";
+																											respuesta1_neoexpresionismo.style.display="none";
+																											respuesta1_surrealismo.style.display="none";
+																											respuesta1_minimalismo.style.display="none";
+																											respuesta1_rococo.style.display="none";
+																											respuesta1_romanticismo.style.display="none";
+																											puntaje_arte(valor_respuesta1d, 1);
+
+																											seccion_preguntaarte1.style.display="none";
+
+																												botonenviar_arte_p1.onclick= function()
+																													{	
+																														botonenviar_arte_p1.style.display="none";
+																														//ocurre cuando se presiona el submit que escondi previamente (por las dudas lo dejo)
+																														 													setTimeout(function(){ 
+																														 													 
+																																											artep1.style.display="none";
+																																											boton_arte_p1.style.display="none";
+																																										    boton_arte_p2.style.display="block"; 
+																																																					} , 1000);
+																													}
+																				};
+																			respuesta1_rococo.onclick = function (){
+
+																												seccionarte_p1.style.display="none";
+																												var valor_respuesta1e =  0;
+																											boton_arte_p1.style.background="red";
+																											respuesta1_neoexpresionismo.style.display="none";
+																											respuesta1_surrealismo.style.display="none";
+																											respuesta1_minimalismo.style.display="none";
+																											respuesta1_rococo.style.display="none";
+																											respuesta1_romanticismo.style.display="none";
+																											puntaje_arte(valor_respuesta1e, 1);
+																											seccion_preguntaarte1.style.display="none";
+
+																												botonenviar_arte_p1.onclick= function()
+																													{	
+																														botonenviar_arte_p1.style.display="none";
+																														//ocurre cuando se presiona el submit que escondi previamente (por las dudas lo dejo)
+																														 													setTimeout(function(){ 
+																														 													
+																																											artep1.style.display="none";
+																																											boton_arte_p1.style.display="none";
+																																										    boton_arte_p2.style.display="block"; 
+																																																					} , 1000);
+																													}
+																										  
+																				};
+																				
+									
+										};
+							
+							boton_arte_p2.onclick = function () {
+										//PREGUNTA 2
+										//declaro variables de la respuesta
+										var respuesta2_dali= document.getElementById("r2_dali");
+										var respuesta2_miro= document.getElementById("r2_miro");
+										var respuesta2_piero= document.getElementById("r2_pierodella");
+										var respuesta2_manet= document.getElementById("r2_manet");
+										var respuesta2_cezanne= document.getElementById("r2_cezanne");
+										var respuesta2_braque= document.getElementById("r2_braque");
+										var respuesta2_jmbasquiat= document.getElementById("r2_jmbasquiat");
+										var respuesta2_berni= document.getElementById("r2_berni");
+										var respuesta2_vangogh= document.getElementById("r2_vangogh");
+										//declaro la variable que voy a usar para medir el resultado
+										//declaro los flag, que me permiten por cada respuesta verificar que se le cuente al usuario una sola vez el voto
+										var arte_respuesta2 = 0;
+										var flag_2dali= 0;
+										var flag_2miro= 0;
+										var flag_2piero= 0;
+										var flag_2manet= 0;
+										var flag_2cezanne= 0;
+										var flag_2braque= 0;
+										var flag_2basquiat= 0;
+										var flag_2berni= 0;
+										var flag_2vangogh= 0;
+
+										artep2.style.display="block",
+										// algoritmo que define la cantidad de puntos que obtiene el usuario de la pregunta 3, va a obtener un numero, almacenado en la variable arte_respuesta2, que representara cuan bien le fue de un rango al -4 añ 4
+										respuesta2_dali.onclick=function()
+										{	
+											
+											if (flag_2dali%2==0) {arte_respuesta2--;}
+											else {arte_respuesta2++;}
+											flag_2dali++;
+											
+											//console.log(flag_2dali);
+											//console.log(arte_respuesta2);
+										}
+										respuesta2_miro.onclick=function()
+										{
+											if (flag_2miro%2==0) {arte_respuesta2--;}
+											else  {arte_respuesta2++;}
+											flag_2miro++;
+											
+											//console.log(flag_2miro);
+											//console.log(arte_respuesta2);
+										}
+										respuesta2_piero.onclick=function()
+										{
+											if (flag_2piero%2==0) {arte_respuesta2++;}
+											else {arte_respuesta2--;}
+											flag_2piero++;
+											
+											
+											//console.log(flag_2piero);
+											//console.log(arte_respuesta2);
+										}
+										respuesta2_manet.onclick=function()
+										{
+											if (flag_2manet%2==0) {arte_respuesta2++;}
+											else  {arte_respuesta2--;}
+											flag_2manet++;
+											
+											
+											//console.log(flag_2manet);
+											//console.log(arte_respuesta2);
+										}		
+										respuesta2_cezanne.onclick=function()
+										{
+											if (flag_2cezanne%2==0) {arte_respuesta2++;}
+											else  {arte_respuesta2--;}
+											flag_2cezanne++; 
+											
+											
+											//console.log(flag_2cezanne);
+											//console.log(arte_respuesta2);
+										}
+										respuesta2_braque.onclick=function()
+										{
+											if (flag_2braque%2==0) {arte_respuesta2--;}
+											else  {arte_respuesta2++;}
+											flag_2braque++;
+											
+											
+											//console.log(flag_2braque);
+											//console.log(arte_respuesta2);
+										}
+										respuesta2_jmbasquiat.onclick=function()
+										{
+											if (flag_2basquiat%2==0) {arte_respuesta2--;}
+											else  {arte_respuesta2++;}
+											flag_2basquiat++;
+											
+											
+											//console.log(flag_2basquiat);
+											//console.log(arte_respuesta2);
+										}
+										respuesta2_berni.onclick=function()
+										{
+											if (flag_2berni%2==0) {arte_respuesta2--;}
+											else {arte_respuesta2++;}
+											flag_2berni++;
+											
+											
+											//console.log(flag_2berni);
+											//console.log(arte_respuesta2);
+										}
+										respuesta2_vangogh.onclick=function()
+										{
+											if (flag_2vangogh%2==0) {arte_respuesta2++;}
+											else  {arte_respuesta2--;}
+											
+											
+											//console.log(flag_2vangogh);
+											//console.log(arte_respuesta2);
+										}
+										
+							
+								//sucede cuando se envia el formulario de la pregunta 2 de arte
+								botonenviar_arte_p2.onclick= function()
+								{
+									var seccion_artep2 =document.getElementById("seccion_preguntaarte2");
+									var devolucion_ap2 = document.getElementById("devolucion_artep2");
+									botonenviar_arte_p2.style.display="none";
+									seccion_artep2.style.display="none";
+									//el usuario envia la pregunta y se procesan los datos
+									
+									if (arte_respuesta2== 4) {
+										boton_arte_p2.style.background="green";
+										var valor_respuesta2a =  35;
+										puntaje_arte(valor_respuesta2a,2);
+										devolucion_ap2.innerHTML = "EXCELENTE, HA GANADO 35 PUNTOS"; 
+										seccion_artep2.style.display="none";
+
+									}
+									if (arte_respuesta2== 3) {
+										//pinto de verde el cartel de la pregunta
+										boton_arte_p2.style.background="green";
+										//inicializo la cantidad de puntos que tendra la respuesta
+										var valor_respuesta2b =  25;
+										puntaje_arte(valor_respuesta2b,2);
+										devolucion_ap2.innerHTML = "MUY BIEN, HA GANADO 25 PUNTOS";
+										seccion_artep2.style.display="none";
+									}
+									if (arte_respuesta2==2) {
+										var valor_respuesta2c =  15;
+										boton_arte_p2.style.background="orange";
+										arte_puntaje= arte_puntaje + 15;
+										puntaje_arte(valor_respuesta2c,2);
+										devolucion_ap2.innerHTML = "PODRIA ESTAR MEJOR, TOMA 15 PUNTOS";
+										seccion_artep2.style.display="none";
+									}
+									if (arte_respuesta2== 1) {
+										boton_arte_p2.style.background="grey";
+										var valor_respuesta2d =  10;
+										puntaje_arte(valor_respuesta2d,2);
+										devolucion_ap2.innerHTML = "10 PUNTOS PARA LA BOLSA, A SEGUIR!";
+										seccion_artep2.style.display="none";
+									}
+									if (arte_respuesta2<1) {
+										var valor_respuesta2e =  0;
+										puntaje_arte(valor_respuesta2e,2);
+										boton_arte_p2.style.background="red";
+										devolucion_ap2.innerHTML = "0 PUNTOS, LO IMPORTANTE ES PARTICIPAR..";
+										seccion_artep2.style.display="none";
+									}
+
+									
+
+									setTimeout(function(){ 
+														artep2.style.display="none";
+														 boton_arte_p2.style.display="none";
+													    boton_arte_p3.style.display="block";} , 3500);       }
+
+								
+
+						}
+
+					boton_arte_p3.onclick =function () {
+											//PREGUNTA 3
+											var respuesta3_velazquez= document.getElementById("r3_dvelazquez");
+											var respuesta3_frida= document.getElementById("r3_frida");
+											var respuesta3_ribera= document.getElementById("r3_ribera");
+											var respuesta3_elgreco= document.getElementById("r3_elgreco");
+											var respuesta3_goya= document.getElementById("r3_goya");
+											// escondo el submit
+											artep3.style.display="block";
+											//segun la respuesta elegida, el programa borra el resto de los input y da el resultado
+													respuesta3_frida.onclick = function (){
+																boton_arte_p3.style.background="red";
+																respuesta3_frida.style.display="none";
+																respuesta3_velazquez.style.display="none";
+																respuesta3_ribera.style.display="none";
+																respuesta3_elgreco.style.display="none";
+																respuesta3_goya.style.display="none";
+																var valor_respuesta3a =  0;
+																seccion_preguntaarte3.style.display="none";
+
+																puntaje_arte(valor_respuesta3a,3);
+
+																			botonenviar_arte_p3.onclick=function (){
+																												botonenviar_arte_p3.style.display="none";
+																												setTimeout(function(){ 
+																												artep3.style.display="none"; 
+																											 	boton_arte_p3.style.display="none";
+																										  	  	boton_arte_p4.style.display="block";} , 1000);			};
+													}
+
+
+
+													respuesta3_velazquez.onclick = function (){
+																		boton_arte_p3.style.background="red";
+																		respuesta3_frida.style.display="none";
+																		respuesta3_velazquez.style.display="none";
+																		respuesta3_ribera.style.display="none";
+																		respuesta3_elgreco.style.display="none";
+																		respuesta3_goya.style.display="none";
+																		var valor_respuesta3b =  0;
+																		puntaje_arte(valor_respuesta3b,3);
+																		seccion_preguntaarte3.style.display="none";
+
+																				botonenviar_arte_p3.onclick=function (){
+																													botonenviar_arte_p3.style.display="none";
+																													setTimeout(function(){ 
+																													 artep3.style.display="none"; 
+																													 boton_arte_p3.style.display="none";
+																												     boton_arte_p4.style.display="block";} , 1000);		};
+														}
+
+
+													respuesta3_ribera.onclick = function (){
+																				boton_arte_p3.style.background="red";
+																				respuesta3_frida.style.display="none";
+																				respuesta3_velazquez.style.display="none";
+																				respuesta3_ribera.style.display="none";
+																				respuesta3_elgreco.style.display="none";
+																				respuesta3_goya.style.display="none";
+																				var valor_respuesta3c =  0;
+																			    puntaje_arte(valor_respuesta3c,3);
+																			    seccion_preguntaarte3.style.display="none";
+
+
+																botonenviar_arte_p3.onclick=function (){
+																											botonenviar_arte_p3.style.display="none";
+																											setTimeout(function(){  
+																												artep3.style.display="none"; 
+																												 boton_arte_p3.style.display="none";
+																											    boton_arte_p4.style.display="block";} , 1000);			};
+																	}
+
+													respuesta3_elgreco.onclick = function (){
+																					boton_arte_p3.style.background="red";
+																					respuesta3_frida.style.display="none";
+																					respuesta3_velazquez.style.display="none";
+																					respuesta3_ribera.style.display="none";
+																					respuesta3_elgreco.style.display="none";
+																					respuesta3_goya.style.display="none";
+																					var valor_respuesta3d =  0;
+																					puntaje_arte(valor_respuesta3d,3);
+																					seccion_preguntaarte3.style.display="none";
+																		botonenviar_arte_p3.onclick=function (){
+																					botonenviar_arte_p3.style.display="none";
+																					setTimeout(function(){ 
+																						artep3.style.display="none"; 
+																					 boton_arte_p3.style.display="none";
+																				    boton_arte_p4.style.display="block";} , 1000);		};
+																			}
+
+													respuesta3_goya.onclick = function (){
+																					boton_arte_p3.style.background="green";
+																					respuesta3_frida.style.display="none";
+																					respuesta3_velazquez.style.display="none";
+																					respuesta3_ribera.style.display="none";
+																					respuesta3_elgreco.style.display="none";
+																					respuesta3_goya.style.display="none";
+																					var valor_respuesta3e =  30;
+																			puntaje_arte(valor_respuesta3e,3);
+																			seccion_preguntaarte3.style.display="none";
+																		botonenviar_arte_p3.onclick=function (){
+																					botonenviar_arte_p3.style.display="none";
+																					setTimeout(function(){ 
+																						artep3.style.display="none"; 
+																					 boton_arte_p3.style.display="none";
+																				    boton_arte_p4.style.display="block";} , 1000);		};
+																		}
+													
+
+									
+
+						}
+							//inicializo variables para medir aciertos y errores
+							var arte_p4_aciertos= 0;
+							var arte_p4_errores= 0;
+
+						boton_arte_p4.onclick =function () {
+											//PREGUNTA 4
+													//inicializo las variables de las imagenes
+													var arte_p4_r1=document.getElementById("arte_preg4_img1");
+													var arte_p4_r2=document.getElementById("arte_preg4_img2");
+													var arte_p4_r3=document.getElementById("arte_preg4_img3");
+													var arte_p4_r4=document.getElementById("arte_preg4_img4");
+													var arte_p4_r5=document.getElementById("arte_preg4_img5");
+													var arte_p4_r6=document.getElementById("arte_preg4_img6");
+													var arte_p4_r7=document.getElementById("arte_preg4_img7");
+													var arte_p4_r8=document.getElementById("arte_preg4_img8");
+													//inicializo variables para medir aciertos y errores
+													var arte_p4_aciertos= 0;
+													var arte_p4_errores= 0;
+													//iniciliazo la variable de devolucion de respuesta
+													var devolucion_ap4 = document.getElementById("devolucion_artep4");
+													//si el usuario toca la imagen numero 1, el programa pasa a esperar que toque otra imagen para evaluar la relacion
+													// IMPORTANTE: Estos son las correspondencias de las imagenes = la 1 - 3, la 2- 5, la 4 -8 y la 7 con la 6
+													var aciertos = 0;
+													artep4.style.display="block";
+													botonenviar_arte_p4.style.display="none";
+													boton_arte_p4.style.display="none";
+													arte_p4_r1.style.display="inline";
+													arte_p4_r2.style.display="inline";
+													arte_p4_r3.style.display="inline";
+													arte_p4_r4.style.display="inline";
+													arte_p4_r5.style.display="inline";
+													arte_p4_r6.style.display="inline";
+													arte_p4_r7.style.display="inline";
+													arte_p4_r8.style.display="inline";
+												
+													devolucion_ap4.innerHTML+= "PRESIONE LA PRIMERA IMAGEN PARA COMENZAR. EL BORDE DE LA IMAGEN SE RESALTARA UNA VEZ SELECCIONADA";
+													arte_p4_r1.onclick= function () {   
+														boton_arte_p4.style.display="none";
+														arte_p4_r1.style.border = "3px solid violet"; 
+														devolucion_ap4.innerHTML= "AHORA SELECCIONE LA IMAGEN 'HERMANA'";
+														//Los errores
+														arte_p4_r2.onclick= function () {agregarerror_p4();return false;} 
+														arte_p4_r4.onclick= function () {agregarerror_p4();return false;}   
+														arte_p4_r5.onclick= function () {agregarerror_p4();return false;}   
+														arte_p4_r6.onclick= function () {agregarerror_p4();return false;}   
+														arte_p4_r7.onclick= function () {agregarerror_p4();return false;}   
+														arte_p4_r8.onclick= function () {agregarerror_p4();return false;}  
+
+														arte_p4_r3.onclick = function () { agregaracierto_p4();
+																						arte_p4_r3.style.border = "2px solid violet"; 
+																						arte_p4_r1.style.display="none";
+																						arte_p4_r3.style.display="none";  
+																						setTimeout( function() {
+																							
+																					devolucion_ap4.innerHTML= "PRESIONE LA PRIMERA IMAGEN PARA SEGUIR";
+																								
+																					arte_p4_r4.onclick= function () {return false;}
+																					arte_p4_r5.onclick= function () {return false;}
+																					arte_p4_r7.onclick= function () {return false;}
+																					arte_p4_r8.onclick= function () {return false;} 
+																					arte_p4_r6.onclick= function () {return false;} 
+																					arte_p4_r2.onclick= function () {   
+																																
+																									arte_p4_r2.style.border = "3px solid violet";
+																									arte_p4_r4.onclick= function () {agregarerror_p4();return false;}
+																									arte_p4_r6.onclick= function () {agregarerror_p4();return false;}
+																									arte_p4_r7.onclick= function () {agregarerror_p4();return false;}
+																									arte_p4_r8.onclick= function () {agregarerror_p4();return false;}   
+																									arte_p4_r5.onclick = function () { agregaracierto_p4();
+																																		arte_p4_r5.style.border = "3px solid violet"; 
+																																		arte_p4_r2.style.display="none";
+																																		arte_p4_r5.style.display="none";  
+																																				setTimeout( function() {
+																																					arte_p4_r4.onclick= function () {return false;}
+																																					arte_p4_r7.onclick= function () {return false;}		
+																																					arte_p4_r8.onclick= function () {return false;} 
+																																					arte_p4_r6.onclick= function () {return false;} 
+																																					//ESPERA A QUE PRESIONE LA SIGUIENTE IMAGEN
+																																					devolucion_ap4.innerHTML+= ", PRESIONE LA PRIMERA IMAGEN PARA SEGUIR";
+																																						arte_p4_r4.onclick= function () {  
+																																													arte_p4_r4.style.border = "3px solid violet"; 
+																																													
+																																													arte_p4_r6.onclick= function () {agregarerror_p4();return false;}
+																																													arte_p4_r7.onclick= function () {agregarerror_p4();return false;}
+																															  
+																																												arte_p4_r8.onclick = function () { agregaracierto_p4();
+																																																			arte_p4_r8.style.border = "2px solid violet"; 
+																																																			arte_p4_r4.style.display="none";
+																																																			arte_p4_r8.style.display="none";  
+																																																				setTimeout( function() {
+																																																				arte_p4_r7.onclick= function () {return false;}
+																																																				arte_p4_r6.onclick= function () {   
+																																																			arte_p4_r6.style.border = "3px solid violet";   
+																																																arte_p4_r7.onclick = function () { agregaracierto_p4();
+																																																																							arte_p4_r7.style.border = "3px solid violet";  
+																																																																								arte_p4_r7.style.display="none";
+																																																																									arte_p4_r6.style.display="none"; 
+																																																																							setTimeout( function() { botonenviar_arte_p4.style.display="block";
+																																																																								
+
+																																																																							}, 10 );
+																																																																}
+																																																															}
+																																																									}, 10 );
+																																																		}
+																																																	}
+																																							}, 10 );
+																																}
+																															}
+
+																					}, 10 );
+														}
+													}
+
+/*													
+
+													arte_p4_r4.onclick= function () {   
+														arte_p4_r4.style.border = "2px solid violet";   
+														arte_p4_r8.onclick = function () { agregaracierto_p4();
+																					arte_p4_r8.style.border = "2px solid violet";   
+																					setTimeout( function() {
+																							arte_p4_r4.style.display="none";
+																							arte_p4_r8.style.display="none";
+
+																					}, 1000 );
+														}
+													}
+
+													arte_p4_r7.onclick= function () {   
+														arte_p4_r7.style.border = "2px solid violet";   
+														arte_p4_r6.onclick = function () { agregaracierto_p4();
+																					arte_p4_r6.style.border = "2px solid violet";   
+																					setTimeout( function() {
+																							arte_p4_r7.style.display="none";
+																							arte_p4_r6.style.display="none";
+
+																					}, 1000 );
+														}
+													}
+
+													
+*/
+
+
+
+													
+
+
+													function agregaracierto_p4(){
+
+														arte_p4_aciertos++;
+														devolucion_ap4.innerHTML= ("USTED TIENE "+ arte_p4_aciertos + " ACIERTOS");
+														setTimeout(function() {return},1000);
+													};
+
+													function agregarerror_p4(){
+
+														arte_p4_errores++;
+														if (arte_p4_errores==1){
+																	devolucion_ap4.innerHTML= ("USTED TIENE UN ERROR");
+														}
+														if (arte_p4_errores>1){
+														devolucion_ap4.innerHTML= ("USTED TIENE "+ arte_p4_errores + " ERRORES.");}
+
+													};
+													
+													
+
+													
+
+													botonenviar_arte_p4.onclick= function()
+													{		
+
+															botonenviar_arte_p4.style.display="none";
+															 boton_arte_p4.style.display="none";
+															if (arte_p4_aciertos==4){
+
+																if (arte_p4_errores<1){
+																	puntaje_arte(25, 4);
+																	devolucion_ap4.innerHTML="SU PUNTAJE EN ESTA RONDA ES DE 25 PUNTOS, EXCELENTE!";
+																}	
+																if (arte_p4_errores>=2 ){
+																		if(arte_p4_errores<2){
+																				puntaje_arte(20, 4);
+																				devolucion_ap4.innerHTML="SU PUNTAJE EN ESTA RONDA ES DE 20 PUNTOS, BIEN!";
+																		}		
+																}
+																if (arte_p4_errores>=2){
+																		if(arte_p4_errores<6){
+
+																				puntaje_arte(10, 4);
+																				devolucion_ap4.innerHTML="SU PUNTAJE EN ESTA RONDA ES DE 15 PUNTOS, A SEGUIR";
+																		}		
+																}
+																if (arte_p4_errores>6){
+																		puntaje_arte(0, 4)
+																		devolucion_ap4.innerHTML="SU PUNTAJE EN ESTA RONDA ES DE 0 PUNTOS, HASTA MARADONA ERRO PENALES";
+																}
+																	
+																	setTimeout(function(){ 
+																							artep4.style.display="none";
+																							
+																						    boton_arte_p5.style.display="block";} , 4000);
+
+																	}
+													}
+
+									}
+
+				boton_arte_p5.onclick= function() {
+
+												artep5.style.display="block";
+
+
+												var respuesta5_cara= document.getElementById("r5_caravaggio");
+												var respuesta5_mond= document.getElementById("r5_mondrian");
+												var respuesta5_frag= document.getElementById("r5_fragonard");
+												var respuesta5_miguelangel= document.getElementById("r5_ma");
+												var respuesta5_gaugin= document.getElementById("r5_gaugin");
+												var respuesta5_monet= document.getElementById("r5_monet");
+												var respuesta5_rafael= document.getElementById("r5_rafael");
+												var respuesta5_borgoña= document.getElementById("r5_borgoña");
+												var respuesta5_degas= document.getElementById("r5_degas");
+												//apenas elijo una respuesta, escondo la pregunta y muestro si estaba bien o no
+
+
+													var arte_respuesta5 = 0;
+													var flag_5cara= 0;
+													var flag_5mond= 0;
+													var flag_5frag= 0;
+													var flag_5ma= 0;
+													var flag_5gaugin= 0;
+													var flag_5monet= 0;
+													var flag_5rafael= 0;
+													var flag_5borgoña= 0;
+													var flag_5degas= 0;
+
+
+										respuesta5_cara.onclick=function()
+										{	
+											
+											if (flag_5cara%2==0) {arte_respuesta5++;}
+											else {arte_respuesta5--;}
+											flag_5cara++;
+											
+											//console.log(flag_5cara);
+											//console.log(arte_respuesta5);
+										}
+										respuesta5_mond.onclick=function()
+										{
+											if (flag_5mond%2==0) {arte_respuesta5--;}
+											else  {arte_respuesta5++;}
+											flag_5mond++;
+											
+											//console.log(flag_5mond);
+											//console.log(arte_respuesta5);
+										}
+										respuesta5_frag.onclick=function()
+										{
+											if (flag_5frag%2==0) {arte_respuesta5--;}
+											else {arte_respuesta5++;}
+											flag_5frag++;
+											
+											
+											//console.log(flag_5frag);
+											//console.log(arte_respuesta5);
+										}
+										respuesta5_miguelangel.onclick=function()
+										{
+											if (flag_5ma%2==0) {arte_respuesta5++;}
+											else  {arte_respuesta5--;}
+											flag_5ma++;
+											
+											
+											//console.log(flag_5ma);
+											//console.log(arte_respuesta5);
+										}		
+										respuesta5_gaugin.onclick=function()
+										{
+											if (flag_5gaugin%2==0) {arte_respuesta5--;}
+											else  {arte_respuesta5++;}
+											flag_5gaugin++; 
+											
+											
+											//console.log(flag_5gaugin);
+											//console.log(arte_respuesta5);
+										}
+										respuesta5_monet.onclick=function()
+										{
+											if (flag_5monet%2==0) {arte_respuesta5--;}
+											else  {arte_respuesta5++;}
+											flag_5monet++;
+											
+											
+											//console.log(flag_5monet);
+											//console.log(arte_respuesta5);
+										}
+										respuesta5_rafael.onclick=function()
+										{
+											if (flag_5rafael%2==0) {arte_respuesta5++;}
+											else  {arte_respuesta5--;}
+											flag_5rafael++;
+											
+											
+											//console.log(flag_5rafael);
+											//console.log(arte_respuesta5);
+										}
+										respuesta5_borgoña.onclick=function()
+										{
+											if (flag_5borgoña%2==0) {arte_respuesta5++;}
+											else {arte_respuesta5--;}
+											flag_5borgoña++;
+											
+											
+											//console.log(flag_5borgoña);
+											//console.log(arte_respuesta5);
+										}
+										respuesta5_degas.onclick=function()
+										{
+											if (flag_5degas%2==0) {arte_respuesta5--;}
+											else  {arte_respuesta5++;}
+											flag_5degas++;
+											
+											//console.log(flag_5degas);
+											//console.log(arte_respuesta5);
+										}
+										
+							
+										//sucede cuando se envia el formulario de la pregunta 2 de arte
+										botonenviar_arte_p5.onclick= function()
+										{
+											var seccion_artep5 =document.getElementById("seccion_preguntaarte5");
+											var devolucion_ap5 = document.getElementById("devolucion_artep5");
+											botonenviar_arte_p5.style.display="none";
+											seccion_artep5.style.display="none";
+											//el usuario envia la pregunta y se procesan los datos
+											
+											if (arte_respuesta5== 4) {
+												boton_arte_p5.style.background="green";
+												var valor_respuesta5a =  40;
+												puntaje_arte(valor_respuesta5a,5);
+												devolucion_ap2.innerHTML = "La respuesta está excelente. Se lleva 40 puntos!"; 
+												setTimeout(function(){ 		seccion_arte.style.display="none";
+																			devolucion_ap5.style.display="none";
+																			boton_arte_p5.style.display="none";
+																									} , 1000);
+												
+
+											}
+											if (arte_respuesta5== 3) {
+												//pinto de verde el cartel de la pregunta
+												boton_arte_p5.style.background="orange";
+												//inicializo la cantidad de puntos que tendra la respuesta
+												var valor_respuesta5b =  25;
+												puntaje_arte(valor_respuesta5b,5);
+												devolucion_ap5.innerHTML = "La respuesta está muy bien";
+												setTimeout(function(){ 		seccion_arte.style.display="none";
+																			devolucion_ap5.style.display="none";
+																			boton_arte_p5.style.display="none";
+																									} , 1000);
+											}
+											if (arte_respuesta5==2) {
+												var valor_respuesta5c =  15;
+												boton_arte_p5.style.background="yellow";
+												
+												puntaje_arte(valor_respuesta5c,5);
+												devolucion_ap5.innerHTML = "La respuesta está bien";
+												seccion_artep5.style.display="none";
+												setTimeout(function(){ 		seccion_arte.style.display="none";
+																			devolucion_ap5.style.display="none";
+																			boton_arte_p5.style.display="none";
+																									} , 1000);
+											}
+											if (arte_respuesta5<2) {
+												boton_arte_p5.style.background="grey";
+												var valor_respuesta5d =  5;
+
+												puntaje_arte(valor_respuesta5d,5);
+
+												devolucion_ap5.innerHTML = "Podria estar mejor";
+												seccion_artep5.style.display="none";
+												setTimeout(function(){ 			seccion_arte.style.display="none";
+																			devolucion_ap5.style.display="none";
+																			boton_arte_p5.style.display="none";
+																									} , 1000);
+											}
+											if (arte_respuesta5<0) {
+												boton_arte_p2.style.background="black";
+												boton_arte_p2.style.border="2px dotted green"
+												var valor_respuesta5e =  0;
+												puntaje_arte(valor_respuesta5e,5);
+												devolucion_ap5.innerHTML = "Mas suerte la proxima!";
+												seccion_artep5.style.display="none";
+												setTimeout(function(){ 		seccion_arte.style.display="none";
+																			devolucion_ap5.style.display="none";
+																			boton_arte_p5.style.display="none";
+																									} , 1000);
+											}
+										
+											
+
+									 	}
+
+
+
+															
+														
+						
+				};
+
+						return;
+				}
+
+			
+			</script> 
 	
 </body>
 </html>
